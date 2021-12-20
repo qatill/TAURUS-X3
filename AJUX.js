@@ -1377,13 +1377,13 @@ break
              teks = `*• Read by :*\n\n`
              for(let i of infom.reads){
              teks += '@' + i.jid.split('@')[0] + '\n'
-             teks += `> ` + moment(`${i.t}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY hh:mm:ss') + '\n\n'
+             teks += `👀 ` + moment(`${i.t}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY hh:mm:ss') + '\n\n'
              tagg.push(i.jid)
 }
              teks += `*• Delivered to :*\n\n`
              for(let i of infom.deliveries){
              teks += '@' + i.jid.split('@')[0] + '\n'
-             teks += `> ` + moment(`${i.t}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY hh:mm:ss') + '\n\n'
+             teks += `👀 ` + moment(`${i.t}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY hh:mm:ss') + '\n\n'
              tagg.push(i.jid)
 }
              mentions(teks, tagg, true)
