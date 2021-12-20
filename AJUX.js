@@ -1640,7 +1640,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a atempo=1.06,asetrate=44100*1.25 ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Error!🥲')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: ftoko,duration:11})
 						fs.unlinkSync(ran)
@@ -1655,7 +1655,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -af atempo=3/4,asetrate=44508*4/3 ${ran}`, (err, stderr, stdout) => {
 				    fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Error!🥲')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt: true, quoted: mek})
 					fs.unlinkSync(ran)
@@ -1667,7 +1667,7 @@ break
 					ran = getRandom('.mp4')
 					exec(`ffmpeg -i ${media} "origin(rgb24).png" -c:v libx264 -preset placebo -qp 0 -x264-params "keyint=15:no-deblock=1" -pix_fmt yuv444p10le -sws_flags spline+accurate_rnd+full_chroma_int -vf "colormatrix=bt470bg:bt709" -color_range 1 -colorspace 1 -color_primaries 1 -color_trc 1 "colormatrix_yuv444p10le.avi" ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Error!🥲')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, video, { mimetype: 'video/mp4', quoted: ftoko })
 					})
@@ -1679,7 +1679,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=1.3,asetrate=43000" ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Error!🥲')
 						hah = fs.readFileSync(ran)
 						bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: ftext})
 						fs.unlinkSync(ran)
@@ -1692,7 +1692,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=1.0,asetrate=50000" ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Error!')
+						if (err) return reply('Error!🥲')
 						hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: fgc})
 						fs.unlinkSync(ran)
@@ -1720,7 +1720,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -af equalizer=f=65:width_type=o:width=3:g=20 ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Error!🥲')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
@@ -1733,7 +1733,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=0.7,asetrate=43120" ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Error!🥲')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
@@ -1745,7 +1745,7 @@ break
 					 ran = getRandom('.mp3')
 					 exec(`ffmpeg -i ${media} -filter:a "atempo=0.5,asetrate=65100" ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Error!🥲')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
@@ -1757,7 +1757,7 @@ break
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} -filter:a "atempo=0.9,asetrate=95100" ${ran}`, (err, stderr, stdout) => {
 					fs.unlinkSync(media)
-					if (err) return reply('Error!')
+					if (err) return reply('Error!🥲')
 					hah = fs.readFileSync(ran)
 					bosco.sendMessage(from, hah, audio, { mimetype: 'audio/mp4', duration: 359996400, ptt: true, quoted: mek })
 					fs.unlinkSync(ran)
@@ -1786,7 +1786,7 @@ break
             sendMediaURL(from,res.result)
             })
             }else {
-            reply('Reply Stickernya!')
+            reply('Stickernu Reply chy!')
             }
             fs.unlinkSync(owgi)
             break
@@ -1806,7 +1806,7 @@ break
 					break
       case 'kick':
       case 'ban':
-if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
+if (!isOwner && !isGroupAdmins) return reply('*Ayin nee Admin Ano🤭*')
 if (!isBotGroupAdmins) return reply('*Njan admin alla bro!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
@@ -1827,7 +1827,7 @@ bosco.groupRemove(from, [entah])
 }
 break
 case 'add':
-      if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
+      if (!isOwner && !isGroupAdmins) return reply('*Nee Admin Ano*')
 if (!isBotGroupAdmins) return reply('*Njan admin alla bro!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
@@ -1892,7 +1892,7 @@ break
       case 'bc':
 					bosco.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply('*Text avide?*')
+					if (args.length < 1) return reply('*Text avide?🤔*')
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
