@@ -792,7 +792,7 @@ const ftrol = {
         '🍊 : 🍒 : 🍐',
         '🍒 : 🔔 : 🍊',
         '🍇 : 🍇 : 🍐',
-        '🍊 : 🍋 : 🔔', //ANKER
+        '🍊 : 🍋 : 🔔', //AJU
         '🔔 : 🍒 : 🍐',
         '🔔 : 🍒 : 🍊',
         '🍊 : 🍋 : ??',        
@@ -1253,7 +1253,7 @@ wa.me/${owner}`
 					for (let _ of anu) {
 					 bosco.deleteMessage(_.jid)
 					}
-					reply('*done*')
+					reply('*done👍*')
 					break
          case 'setprefix':
 				prefix = args.join(' ')
@@ -1340,9 +1340,9 @@ break
 					const namaPack = exifff.split('|')[0]
 					const authorPack = exifff.split('|')[1]
 					exif.create(namaPack, authorPack)
-					await reply('Done gan')
+					await reply('Done 👍')
 				break
-     case 'searchmsg':  //by ANU TEAM
+     case 'searchmsg':  //by AJU
              if (args.length < 1) return reply(`*What Message Are You Looking For?*\n*Example* : ${prefix + command} halo|10`)
              teks = arg
              if (teks.includes("|")) { 
@@ -1805,6 +1805,7 @@ break
 					})
 					break
       case 'kick':
+      case 'ban':
 if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
 if (!isBotGroupAdmins) return reply('*Njan admin alla bro!*')
 if (!isGroup) return
