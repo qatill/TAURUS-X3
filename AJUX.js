@@ -1987,6 +1987,13 @@ break
               break
 case 'mode':
 buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+const buMess = {
+    contentText: "SELF/PUBLIC",
+    footerText: 'Please choose one',
+    buttons: buttonss,
+    headerType: 1
+}
+await bosco.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftex})
 break
 //------------------< Public/Self >-------------------
 
