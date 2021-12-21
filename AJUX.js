@@ -1985,6 +1985,9 @@ break
               fs.unlinkSync(ran)
 })
               break
+case 'mode':
+buttonss = [{buttonId: `public`, buttonText: {displayText: 'PUBLIC👥'}, type: 1},{buttonId: `self`, buttonText: {displayText: 'SELF👤'}, type: 1}]
+break
 //------------------< Public/Self >-------------------
 
         case 'public':
