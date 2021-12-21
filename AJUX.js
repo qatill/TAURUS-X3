@@ -2964,6 +2964,33 @@ case 'emoji':
                reply(txtx.slice(0, 65536) + '')
 }
                break
+        case 'sellbot':
+        case 'iklan':
+reply(`┏━━━━⬣ *BOT FEATURES*
+┃⬡ _ANTILINK_
+┃⬡ _WELCOME IMAGE + BUTTON_
+┃⬡ _BUTTON CMD_
+┃⬡ _STICKER CMD_
+┃⬡ _AND MANY OTHER FEATURES_
+┗⬣
+┏━━━━⬣ *LIST SELLING BOT*
+┃⬡ _RENT 50INR / WEEK_
+┃⬡ _RENT 100INR / MONTH_
+┃⬡ _RENT 150INR / MONTH + PREM_
+┃⬡ _PERMANENT 500INR_
+┃⬡ _PERMANENT + PREM 600INR_
+┗⬣
+┏━━━━⬣ *PREMIUM RENTAL LIST*
+┃⬡ _PREM 50INR / MONTH_
+┃⬡ _PREM 100INR PERMANENT_
+┗⬣
+┏━━━━⬣ *PAYMENT METHOD*
+┃⬡ _PAYTM_
+┗⬣
+┏━━━━⬣ *CONTACT*
+┃⬡ _Owner : wa.me/${NomorOwner}_
+┗⬣━━━━━━━━━━━━━━━━━━━━━━`)
+break
         case 'searchmsg':  //by ANU TEAM
                if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
                teks = arg
