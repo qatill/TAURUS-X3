@@ -2991,7 +2991,10 @@ reply(`┏━━━━⬣ *BOT FEATURES*
 ┃⬡ _Owner : wa.me/${owner}_
 ┗⬣━━━━━━━━━━━━━━━━━━━━━━`)
 break
-        case 'searchmsg':  //by ANU TEAM
+case 'test':
+reply(`BOT WAS ONLINE BEFORE YOUR BIRTH😏`)
+break
+        case 'searchmsg':  //by AJU
                if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
                teks = arg
                if (teks.includes("|")) { 
