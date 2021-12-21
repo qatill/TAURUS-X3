@@ -2988,7 +2988,7 @@ reply(`┏━━━━⬣ *BOT FEATURES*
 ┃⬡ _PAYTM_
 ┗⬣
 ┏━━━━⬣ *CONTACT*
-┃⬡ _Owner : wa.me/${NomorOwner}_
+┃⬡ _Owner : wa.me/${owner}_
 ┗⬣━━━━━━━━━━━━━━━━━━━━━━`)
 break
         case 'searchmsg':  //by ANU TEAM
