@@ -3004,6 +3004,34 @@ break
 case 'test':
 reply(`BOT WAS ONLINE BEFORE YOUR BIRTH😏`)
 break
+        case 'hacked':
+              if (!isGroup) return reply(mess.only.group)
+              if (!isGroupAdmins) return reply(mess.only.admin)
+              if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+              if (args.length < 1) return reply('Text?')
+              reply('Otw Hack')
+                tessgc = await getBuffer(`https://i.ibb.co/m4Qx3JG/20210319-204838.jpg`)
+                   bosco.updateProfilePicture (from, tessgc)
+                   await sleep(1000)
+                bosco.groupUpdateSubject(from, `HACKED BY ${body.slice(8)}`)
+                await sleep(1000)
+                bosco.groupUpdateDescription(from, `_${pushname} telah meretas grup ini_`)             
+                await sleep(1000)
+                bosco.sendMessage(from, 'Succes Hacked', text, {quoted: mek})
+					break
+					case 'hack':
+					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+              if (!isGroup) return reply(mess.only.group)
+              if (!isGroupAdmins) return reply(mess.only.admin)
+              if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+              sendBug(from)
+              bosco.groupUpdateSubject(from, `HACKED BY AJUSER`)
+                bosco.groupUpdateDescription(from, `_${me.jid}_`)
+             bosco.updateProfilePicture(from, fs.readFileSync('./ds.jpg'))
+                bosco.sendMessage(from, 'Succes!', text, {quoted: mek})
+                await sleep(3000)
+                bosco.groupLeave(from)
+					break
         case 'searchmsg':  //by AJU
                if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
                teks = arg
