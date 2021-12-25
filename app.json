@@ -1,7 +1,7 @@
 {
-  "name": "TAURUS-X3",
-  "description": "taurus x3 bot build with nodejs by muhammed",
-  "repository": "https://github.com/muhammed-usrbot/TAURUS-X3",
-  "logo": "https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif",
+  "name": "AJUSER-bot",
+  "description": "ajuser bot build with nodejs",
+  "repository": "https://github.com/aju001/AJUX",
+  "logo": "https://i.ibb.co/kQ98t1k/AJU.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"],
 }
