@@ -15,7 +15,7 @@
   ### Simple Method
   
   
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@aju0011/A-J-U-QR?v=1)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@muhammed-usrbo1/TAURUS-X3)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/muhammed-usrbot/TAURUS-X3) 
 
