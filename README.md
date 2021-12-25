@@ -3,12 +3,12 @@
 
 
 <div align="center">
-<a href="https://github.com/aju001"><img src="life.jpg" alt="Aju"width="500" />
+<a href="https://github.com/aju001"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif" alt="MUHAMMED"width="200" />
  
-## ⚡AJUSER⚡
+## TAURUS X3
 
 
-> Ajuser Bot is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
+> Taurus x3 is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
 >
 >
 
@@ -17,7 +17,7 @@
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@aju0011/A-J-U-QR?v=1)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aju001/AJUX) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/muhammed-usrbot/TAURUS-X3) 
 
 
 
@@ -29,9 +29,9 @@
 
 
 <p align="center">
-  <a href="https://github.com/aju001/AJUX#requirements">Requirements</a> •
-  <a href="https://github.com/aju001/AJUX#simple method">Installation</a> •
-  <a href="https://github.com/aju001/AJUX#thanks-to">Thanks to AJU</a> 
+  <a href="https://github.com/muhammed-usrbot/TAURUS-X3#requirements">Requirements</a> •
+  <a href="https://github.com/muhammed-usrbot/TAURUS-X3#simple method">Installation</a> •
+  <a href="https://github.com/muhammed-usrbot/TAURUS-X3#thanks-to">Thanks to Muhammed</a> 
 </p>
 </div>
 
@@ -51,11 +51,11 @@ https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ```
 ## `CHANGE SESSION`
-[`Click Here`](https://github.com/aju001/AJUX/blob/master/Aju.json#L1)
+[`Click Here`](https://github.com/muhammed-usrbot/TAURUS-X3/blob/master/Taurus.json#L1)
 
 ## `SETTINGS`
-- CHANGE OWNER NUMBER [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L2)
-- CHANGE OWNER NAME [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L5)
+- CHANGE OWNER NUMBER [Here](https://github.com/muhammed-usrbot/TAURUS-X3/blob/master/setting.json#L2)
+- CHANGE OWNER NAME [Here](https://github.com/muhammed-usrbot/TAURUS-X3/blob/master/setting.json#L5)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
