@@ -3,7 +3,7 @@
 
 
 <div align="center">
-<a href="https://github.com/aju001"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif" alt="MUHAMMED"width="200" />
+<a href="https://github.com/muhammed-usrbot"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif" alt="MUHAMMED"width="200" />
  
 ## TAURUS X3
 
@@ -24,7 +24,7 @@
 <p align="center">
  <a href="https://github.com/muhammed-usrbot"><img title="Author" src="https://img.shields.io/badge/Author-Muhammed-blue.svg?style=for-the-badge&logo=github" /></a>  <a href="https://Wa.me/+919961050829?text=Hello%20Taurus%20Bro🌝...Im%20big%20fan%20of%20you%20😌"><img title="Author" src="https://img.shields.io/badge/Owner-Muhammed-blue.svg?style=for-the-badge&logo=whatsapp" /></a>
 <p align="center">
-<a href="https://chat.whatsapp.com/JCDXgSphA49EHxjPn813IL"><img title="Author" src="https://img.shields.io/badge/Watsapp-Group-blue.svg?style=for-the-badge&logo=whatsapp" /></a> <a href="https://youtube.com/channel/TAURUSEDITS"><img title="Author" src="https://img.shields.io/badge/Youtube-TAURUSEDITS-blue.svg?style=for-the-badge&logo=youtube" /></a>
+<a href="https://chat.whatsapp.com/JCDXgSphA49EHxjPn813IL"><img title="Author" src="https://img.shields.io/badge/Watsapp-Group-blue.svg?style=for-the-badge&logo=whatsapp" /></a> <a href="https://youtube.com/c/TAURUSEDITS"><img title="Author" src="https://img.shields.io/badge/Youtube-TAURUSEDITS-blue.svg?style=for-the-badge&logo=youtube" /></a>
 </p>
 
 
@@ -87,7 +87,7 @@ you can contact us
 
 # Thanks to
 
-* [`Aju`](https://github.com/aju001)
+* [`Muhammed`](https://github.com/muhammed-usrbot)
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 
 
