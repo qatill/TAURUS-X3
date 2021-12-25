@@ -1,7 +1,27 @@
 {
   "name": "TAURUS-X3",
-  "description": "taurus x3 bot build with nodejs",
+  "description": "taurus x3 build with nodejs by muhammed",
   "repository": "https://github.com/muhammed-usrbot/TAURUS-X3",
   "logo": "https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
