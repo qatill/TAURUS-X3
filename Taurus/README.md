@@ -12,3 +12,12 @@
 
 [`FOLLOW`](www.instagram.com/taurus.efx)
 
+
+
+
+
+
+
+
+
+<a href="trs"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif"><width="120px"></a>
