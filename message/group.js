@@ -44,7 +44,7 @@ module.exports = welcome = async (bosco, anu) => {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌹 *Hɪ* @${num.split('@')[0]}\n🌹 *Bɪᴏ* : *${thu.status}*\n🌹 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌹 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌹 *Dᴏɴᴛ Fᴏʀɢᴇᴛ Dɪsᴄʀɪᴘᴛɪᴏɴ*\n ${time_wel} -  ${time_welc}`
+                teks = `➪ *ʜɪ* @${num.split('@')[0]}\n➪ *ʙɪᴏ* : *${thu.status}*\n➪ *ᴍᴇᴍʙᴇʀs : ${memeg}*\n➪ *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ* \n *${mdata.subject}*\n➪ *ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅɪsᴄʀɪᴘᴛɪᴏɴ*\n\n ${time_wel} -  ${time_welc}\n\nᴛᴀᴜʀᴜs™`
                 welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'DISCRIPTION'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 bosco.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
@@ -59,8 +59,8 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ Bʀᴏᴛʜᴇʀ* 👋\n@${num.split('@')[0]}\n *Rᴇsᴛ Nᴏᴡ Pᴇᴀᴄᴇ* 🌹\n${time_wel} -  ${time_welc}`
-                goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'}, type:1}]
+                out = `*ɢᴏᴏᴅ ʙʏᴇ ʙʀᴏ*\n@${num.split('@')[0]}\n *ʙʏᴇ ʙʏᴇ* \n${time_wel} -  ${time_welc}\n\nᴛᴀᴜʀᴜs™`
+                goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'GET OUT🚪'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 bosco.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
