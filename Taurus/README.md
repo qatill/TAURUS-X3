@@ -20,4 +20,7 @@
 
 
 
-<a href="trs"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif"><width="120px"></a>
+
+<div align="center">
+<a href="https://github.com/muhammed-usrbot"><img src="https://c.tenor.com/bVm05NUoyF0AAAAC/bokuno-hero-academia-izuku.gif" alt="MUHAMMED"width="200" />
+ 
