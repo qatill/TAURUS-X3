@@ -2808,7 +2808,7 @@ case 'emoji':
 						teks += `- ${awokwkwk}\n`
 					}
 					teks += `\n*Tᴏᴛᴀʟ : ${vien.length}*\n\n_▢_`
-					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝙏𝘼𝙐𝙍𝙐𝙎${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://i.ibb.co/kQ98t1k/Taurus.jpg'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/918157849715'}`}},quoted: ftext})
+					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝙏𝘼𝙐𝙍𝙐𝙎${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://bit.ly/3sC5w0G'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/918157849715'}`}},quoted: ftext})
 					break
 				case 'addimage':
 					if (!isQuotedImage) return reply('*Reply image*')
