@@ -42,8 +42,8 @@ baterai = 'unknown'
 charging = 'unknown'
 
 
-require('./Bosco.js')
-nocache('../Bosco.js', module => console.log(color('[WATCH]', 'cyan'), color(`'${module}'`, 'green'), 'File is updated!'))
+require('./TRS.js')
+nocache('../TRS.js', module => console.log(color('[WATCH]', 'cyan'), color(`'${module}'`, 'green'), 'File is updated!'))
 require('./message/help.js')
 nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), color(`'${module}'`, 'green'), 'File is updated!'))
          
@@ -66,7 +66,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 	})
 
 	// Menghubungkan
-	fs.existsSync(`./Denis.json`) && bosco.loadAuthInfo(`./Denis.json`)
+	fs.existsSync(`./Taurus.json`) && bosco.loadAuthInfo(`./Taurus.json`)
 	bosco.on('connecting', () => {
 		start('2', 'Connecting...','red')
 	})
@@ -80,7 +80,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 	await bosco.connect({
 		timeoutMs: 10 * 1000
 	})
-	fs.writeFileSync(`./Denis.json`, JSON.stringify(bosco.base64EncodedAuthInfo(), null, '\t'));
+	fs.writeFileSync(`./Taurus.json`, JSON.stringify(bosco.base64EncodedAuthInfo(), null, '\t'));
  teks = `https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m`
  bosco.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
  console.log(color('|WRN|', 'yellow'), color('ǫʀ ɪs ʀᴜɴɪɴɢ', 'blue'))
@@ -192,7 +192,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 
     
 	bosco.on('chat-update', async (message) => {
-		require('./Bosco.js')(bosco, message)
+		require('./TRS.js')(bosco, message)
 	})
 }
 
