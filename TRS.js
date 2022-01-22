@@ -1461,8 +1461,16 @@ wa.me/${owner}`
             bosco.relayWAMessage(osk)
        break
    case 'credits':
-   function _0x4bbd(){var _0x5b8edb=['2095830VjJJiF','\x0a\x0a\x20‣\x20:\x20wa.me/','\x0a\x0a\x20','5267880lROrnj','CATALOG','33609wAGVBo','0','prepareMessageFromContent','relayWAMessage','4972079yWqsym','126495MscqCV','472Lglbxe','\x0a\x0a\x20\x20\x20[\x20𝗧𝗔𝗨𝗥𝗨𝗦\x20𝗖𝗥𝗘𝗗𝗜𝗧𝗦\x20𝗧𝗢\x20]\x20:\x0a\x0a\x20\x20\x20\x0a\x0a\x20‣\x20:\x20wa.me/','919961050829','1506VxXXmd','split','918157849715','6575168hvwamC','32935KmKOyd'];_0x4bbd=function(){return _0x5b8edb;};return _0x4bbd();}function _0x465a(_0x1299f0,_0x564e19){var _0x4bbd7c=_0x4bbd();return _0x465a=function(_0x465a2c,_0x203c87){_0x465a2c=_0x465a2c2006x1d6;var _0x346af7=_0x4bbd7c[_0x465a2c];return _0x346af7;},_0x465a(_0x1299f0,_0x564e19);}var _0x596dfa=_0x465a;(function(_0x559d9d,_0x273832){var _0x530608=_0x465a,_0x15be3d=_0x559d9d();while(!![]){try{var _0x581c1b=parseInt(_0x530608(0x1d9))/0x1+-parseInt(_0x530608(0x1e2))/0x2+parseInt(_0x530608(0x1e7))/0x3*(parseInt(_0x530608(0x1da))/0x4)+-parseInt(_0x530608(0x1e1))/0x5*(parseInt(_0x530608(0x1dd))/0x6)+parseInt(_0x530608(0x1d8))/0x7+parseInt(_0x530608(0x1e0))/0x8+parseInt(_0x530608(0x1e5))/0x9;if(_0x581c1b===_0x273832)break;else _0x15be3d['push'](_0x15be3d['shift']());}catch(_0x5572dc){_0x15be3d['push'](_0x15be3d['shift']());}}}(_0x4bbd,0xd31c6),dtod=_0x596dfa(0x1df),dtod1='0',dtod2=_0x596dfa(0x1dc),dtod3=_0x596dfa(0x1e8),dtod4='0');var v=_0x596dfa(0x1db)+dtod1[_0x596dfa(0x1de)]('@')[0x0]+_0x596dfa(0x1e3)+dtod[_0x596dfa(0x1de)]('@')[0x0]+_0x596dfa(0x1e3)+dtod2['split']('@')[0x0]+'\x0a\x0a\x20‣\x20:\x20wa.me/'+dtod3[_0x596dfa(0x1de)]('@')[0x0]+_0x596dfa(0x1e3)+dtod4[_0x596dfa(0x1de)]('@')[0x0]+_0x596dfa(0x1e4);credit=bosco[_0x596dfa(0x1d6)](from,{'orderMessage':{'itemCount':0x3e8,'message':''+v,'footerText':'hehe','thumbnail':denis,'surface':_0x596dfa(0x1e6)}},{'quoted':mek}),bosco[_0x596dfa(0x1d7)](credit);
-        break
+      credits1= `
+▢ 𝐓𝐀𝐔𝐑𝐔𝐒 𝐁𝐎𝐓 𝐂𝐑𝐄𝐃𝐈𝐓𝐒 ▢ 
+
+
+‣ wa.me/918157849715
+
+‣ wa.me/919961050829
+`
+catlo(credits1)
+      break
 //------------------< Sticker Cmd >-------------------
 
        case 'addcmd': 
@@ -2177,21 +2185,21 @@ break
 					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, image, { caption: `${body.slice(4)}`})
+							bosco.sendMessage(_.jid, buff, image, { quoted:ftroli, caption: caps})
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { caption: `${body.slice(4)}`})
+							bosco.sendMessage(_.jid, buff, video, { quoted:ftroli, caption: `${body.slice(4)}`)
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
+							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, { quoted:ftroli, caption: `${body.slice(4)}`)
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 					} else {
@@ -2817,7 +2825,7 @@ teks = `
                res = await y2mateA(res.all[0].url).catch(e => {
                reply('Error When Entering Y2mate Web')
                })
-               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d2006xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','‣\x20Mᴀᴅᴇ\x20Wɪᴛʜ\x20ᴛᴀᴜʀᴜs\x20‣','https://youtu.be/HPoucnmGp8','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp3'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':mek,'thumbnail':denis,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':denis},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
+               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d2006xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','‣\x20Mᴀᴅᴇ\x20Wɪᴛʜ\x20ᴛᴀᴜʀᴜs\x20‣','https://youtu.be/HPoucnmGp8','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp3'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':ftrol,'thumbnail':denis,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':denis},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
                }
                if (teks.endsWith("-doc")){
                const tec = teks.split("-doc")
