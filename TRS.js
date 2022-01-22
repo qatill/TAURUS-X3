@@ -2182,24 +2182,24 @@ break
 					if (args.length < 1) return reply('*TYPE TEXT AFTER BC*')
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
-					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : ftroli
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, image, { quoted:ftroli, caption: caps})
+							bosco.sendMessage(_.jid, buff, image, { quoted:catlo, caption: caps})
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
-						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : catlo
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { quoted:ftroli, caption: `${body.slice(4)}`)
+							bosco.sendMessage(_.jid, buff, video, { quoted:catlo, caption: caps})
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
-						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : catlo
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, { quoted:ftroli, caption: `${body.slice(4)}`)
+							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, { quoted:catlo, caption: caps})
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 					} else {
