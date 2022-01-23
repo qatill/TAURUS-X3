@@ -368,7 +368,7 @@ module.exports = bosco = async (bosco, mek) => {
 			               "groupJid": "6288213840883-1616169743@g.us",
 			               "inviteCode": "mememteeeekkeke",
 			               "groupName": ".bot", 
-                           "caption": `𝑪𝑴𝑫 𝑬𝑿𝑪𝑳𝑼𝑫𝑬𝑫 : \n 𝑵𝑬𝑾 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺 𝑨𝑫𝑫𝑬𝑫 \n 𝑴𝑨𝑫𝑬 𝑩𝒀 𝑻𝑨𝑼𝑹𝑼𝑺`, 
+                           "caption": `🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋`, 
                            'jpegThumbnail': fs.readFileSync(`ds.jpg`)
 		                }
 	               }
@@ -1553,13 +1553,13 @@ catlo(credits1)
 					const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 					buff = await bosco.downloadMediaMessage(encmedia)
 					for (let _ of anu) {
-					bosco.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "0@s.whatsapp.net" } : {})}, message: { orderMessage: { itemCount: 79948730, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${body.slice(5)}`, orderTitle: `hm`, sellerJid: '0@s.whatsapp.net'}}}, mimetype: 'audio/mp4', duration: '999899.0', ptt: true, contextInfo: { forwardingScore: 000, isForwarded: true}})
+					bosco.sendMessage(_.jid, buff, audio, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: from } : {})}, message: { orderMessage: { itemCount: 2006, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${pushname}`, orderTitle: `${pushname}`, sellerJid: '0@s.whatsapp.net'}}}, mimetype: 'audio/mp4', duration: '99989.0', ptt: true, contextInfo: { forwardingScore: 000, isForwarded: true}})
 					}
 					} else if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 					const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 					buff = await bosco.downloadMediaMessage(encmedia)
 					for (let _ of anu) {
-					bosco.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 2006, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${body.slice(5)}`, orderTitle: `ʙʀᴏᴀᴅᴄᴀsᴛ`, sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					bosco.sendMessage(_.jid, buff, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: from } : {})}, message: { orderMessage: { itemCount: 2006, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${pushname}`, orderTitle: `${pushname}`, sellerJid: '0@s.whatsapp.net'}}}})
 					}
 					} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
 					const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2156,8 +2156,8 @@ bosco.groupMakeAdmin(from, [entah])
 }
 break
 case 'demote':
-      if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('* Njan admin alla bro!*')
+      if (!isOwner && !isGroupAdmins) return reply('*YOU ARE NOT ADMIN*')
+if (!isBotGroupAdmins) return reply('*I AM NOT ADMIN!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -2176,62 +2176,39 @@ entah = mek.message.extendedTextMessage.contextInfo.participant
 bosco.groupDemoteAdmin(from, [entah])
 }
 break
-     case 'bc':
-
-      case 'broadcast':
-
-        if (!mek.key.fromMe) return;
-
-             if (!isOwner) return  reply(mess.only.owner)
-
-             if (args.length < 1) return reply('*type anything after bc*')
-
-             anu = await bosco.chats.all()
-
-             if (isMedia && !mek.message.videoMessage || isQuotedImage) {
-
-             const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
-
-             bc = await bosco.downloadMediaMessage(encmedia)
-
-             for (let _ of anu) {
-
-             bosco.sendMessage(_.jid, bc, image, {quoted:ftroli,caption: `*「 TAURUS BROADCASTING 」*\n\n${body.slice(4)}`})
-
-}
-
-             reply('Broadcast success')
-
-             } else {
-
-             for (let _ of anu) {
-
-bosco.sendMessage(_.jid, 
-
-			{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
-
-			"footerText": '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋',
-
-			"buttons": [
-
-			{"buttonId": `${prefix}allmenu`,
-
-			"buttonText": {"displayText": "CLICK TO VIEW MENU"
-
-			},"type": "RESPONSE"}
-
-			], "headerType": 1,
-
-			}, MessageType.buttonsMessage )
-
-}
-
-             reply('Broadcast success')
-
-}
-
-             break
-
+case 'bc':
+					bosco.updatePresence(from, Presence.composing)
+					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+					if (args.length < 1) return reply('*TYPE TEXT AFTER BC*')
+					anu = await bosco.chats.all()
+					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
+					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : ftroli
+						buff = await bosco.downloadMediaMessage(encmedia)
+						for (let _ of anu) {
+							bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://bit.ly/3sC5w0G'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/918157849715'}`}},quoted: ftext})
+						}
+						reply(`*Broadcast success* ${body.slice(4)}`)
+						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
+						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : ftroli
+						buff = await bosco.downloadMediaMessage(encmedia)
+						for (let _ of anu) {
+							bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://bit.ly/3sC5w0G'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/918157849715'}`}},quoted: ftext})
+						}
+						reply(`*Broadcast success* ${body.slice(4)}`)
+						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
+						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : ftoli
+						buff = await bosco.downloadMediaMessage(encmedia)
+						for (let _ of anu) {
+							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}`})
+						}
+						reply(`*Broadcast success* ${body.slice(4)}`)
+					} else {
+						for (let _ of anu) {
+							sendMess(_.jid, `${body.slice(4)}`)
+						}
+						reply(`*Broadcast success*:\n${body.slice(4)}`)
+					}
+					break
        case 'contact':
 				if (!isGroup) return reply(mess.group)
 					argzu = arg.split('|')
