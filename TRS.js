@@ -2177,33 +2177,61 @@ bosco.groupDemoteAdmin(from, [entah])
 }
 break
      case 'bc':
+
       case 'broadcast':
+
         if (!mek.key.fromMe) return;
+
              if (!isOwner) return  reply(mess.only.owner)
+
              if (args.length < 1) return reply('*type anything after bc*')
+
              anu = await bosco.chats.all()
+
              if (isMedia && !mek.message.videoMessage || isQuotedImage) {
+
              const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+
              bc = await bosco.downloadMediaMessage(encmedia)
+
              for (let _ of anu) {
-             bosco.sendMessage(_.jid, bc, image, {quoted:catlo,caption: `*「 TAURUS BROADCASTING 」*\n\n${body.slice(4)}`})
+
+             bosco.sendMessage(_.jid, bc, image, {quoted:ftroli,caption: `*「 TAURUS BROADCASTING 」*\n\n${body.slice(4)}`})
+
 }
+
              reply('Broadcast success')
+
              } else {
+
              for (let _ of anu) {
+
 bosco.sendMessage(_.jid, 
+
 			{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
+
 			"footerText": '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋',
+
 			"buttons": [
+
 			{"buttonId": `${prefix}allmenu`,
+
 			"buttonText": {"displayText": "CLICK TO VIEW MENU"
+
 			},"type": "RESPONSE"}
+
 			], "headerType": 1,
+
 			}, MessageType.buttonsMessage )
+
 }
+
              reply('Broadcast success')
+
 }
+
              break
+
        case 'contact':
 				if (!isGroup) return reply(mess.group)
 					argzu = arg.split('|')
