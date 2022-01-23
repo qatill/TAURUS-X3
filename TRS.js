@@ -2199,7 +2199,7 @@ break
 						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : catlo
 						buff = await bosco.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, { quoted:catlo, caption: caps})
+							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}`})
 						}
 						reply(`*Broadcast success* ${body.slice(4)}`)
 					} else {
@@ -2515,7 +2515,7 @@ ${repo.open_issues} Issue${repo.description ? `
               for (let i = 0; i < results.length; i++) {
               vars +=  `\n━━━━━━━━━━━━━━━━━\n\n*Title:* ${results[i].title}\n\n*Description:* ${results[i].snippet}\n\n*Link:* ${results[i].link}\n`
                }
-               bosco.sendMessage(from, ss, image, {caption: vars, quoted : mek, thumbnail: Buffer.alloc(0) })
+               bosco.sendMessage(from, ss, image, {caption: vars, quoted : ftroli, thumbnail: Buffer.alloc(0) })
                }).catch(e => {
                console.log(e)
                reply(`${e}`)
