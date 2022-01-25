@@ -1,17 +1,17 @@
 module.exports.mess = {
-	        wait: '*Wait Now*',
-			success: '*Succes*',
-			wrongFormat: '*Format Is Wrong Retry..!*',
+	        wait: '*ᴡᴀɪᴛ ɴᴏᴡ..*',
+			success: '*sᴜᴄᴄᴇs*',
+			wrongFormat: '*ғᴏʀᴍᴀᴛ ɪs ᴡʀᴏɴɢ ʀᴇᴛʀʏ..!*',
 			error: {
-				api: '*Oops An Error Occurred*',
-				stick: '*Not That Sticker :v*',
-				Iv: '*Invalid Link*'
+				api: '*ᴏᴏᴘs ᴀɴ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ*',
+				stick: '*ɴᴏᴛ ᴛʜᴀᴛ sᴛɪᴄᴋᴇʀ :v*',
+				Iv: '*ʟɪɴᴋ ɪs ɪɴᴠᴀʟɪᴅ*'
 			},
 			only: {
-				group: '*This command is specific to within the Group only.*',
-				admin: '*This command is specific to within the Group only.*',
-				premium: '*You are not a premium user, send an order* *!buy premium* *to buy premium*',
-				owner: '*This command is specific to the Owner Bot only.*',
-				Badmin: '*This command is only for bots when you are an admin!!*',
+				group: '*ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs sᴘᴇᴄɪғɪᴄ ᴛᴏ ᴡɪᴛʜɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ.*',
+				admin: '*ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs sᴘᴇᴄɪғɪᴄ ᴛᴏ ᴡɪᴛʜɪɴ ɢʀᴏᴜᴘ ᴏɴʟʏ.*',
+				premium: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ, ᴛʏᴘᴇ* *!buy premium* *ᴛᴏ ʙᴇ ᴀ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀ*',
+				owner: '*ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs sᴘᴇᴄɪғɪᴄ ᴛᴏ ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ.*',
+				Badmin: '*ʙᴏᴛ ɪs ɴᴏᴛ ᴀᴅᴍɪɴ ᴛᴏ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ.!!*',
 			}
 		}
