@@ -45,7 +45,7 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 teks = `➪ *ʜɪ* @${num.split('@')[0]}\n➪ *ʙɪᴏ* : *${thu.status}*\n➪ *ᴍᴇᴍʙᴇʀs : ${memeg}*\n➪ *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ* \n *${mdata.subject}*\n➪ *ᴅᴏɴᴛ ғᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅɪsᴄʀɪᴘᴛɪᴏɴ*\n\n ${time_wel} -  ${time_welc}\n\nᴛᴀᴜʀᴜs™`
-                welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'𝐃𝐈𝐒𝐂𝐑𝐈𝐏𝐓𝐈𝐎𝐍'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'𝐒𝐂'},type:1}]
+                welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'ᴅɪsᴄʀɪᴘᴛɪᴏɴ'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'sᴄʀɪᴘᴛ'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 bosco.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -60,7 +60,7 @@ module.exports = welcome = async (bosco, anu) => {
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
                 out = `*ɢᴏᴏᴅ ʙʏᴇ ʙʀᴏ*\n@${num.split('@')[0]}\n *ʙʏᴇ ʙʏᴇ* \n${time_wel} -  ${time_welc}\n\nᴛᴀᴜʀᴜs™`
-                goodbyeBut = [{buttonId:`${prefix}trsdtils`,buttonText:{displayText:'𝐆𝐄𝐓 𝐃𝐄𝐓𝐀𝐈𝐋𝐒'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'𝐒𝐂'}, type:1}]
+                goodbyeBut = [{buttonId:`${prefix}trsdtils`,buttonText:{displayText:'ᴏᴋ ʙɪᴇ'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'sᴄʀɪᴘᴛ'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 bosco.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
