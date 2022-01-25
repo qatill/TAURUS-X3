@@ -987,19 +987,19 @@ const ftrol = {
  menumessage = { contentText: ` `, footerText: `${hehe}`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
  bosco.sendMessage(from, menumessage, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [sender]},})
  break
-        case 'help':
+       case 'help':
         rows = [
-           {title: '𝐎𝐖𝐍𝐄𝐑', description: "sʜᴏᴡ ᴛʜᴇ ᴏᴡɴᴇʀ", rowId: prefix+`owner`},
-           {title: '𝐂𝐑𝐄𝐃𝐈𝐓𝐒', description: "sʜᴏᴡ ᴛʜᴇ ᴄʀᴇᴅɪᴛs ᴏғ ᴛᴀᴜʀᴜs", rowId: prefix+`credits`},
-           {title: '𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴏᴡɴᴇʀ ᴍᴇɴᴜ", rowId: prefix+`ownermenu`},
-           {title: '𝐄𝐃𝐈𝐓 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴇᴅɪᴛ ᴍᴇɴᴜ", rowId: prefix+`editmenu`}]
-           {title: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ", rowId: prefix+`downloadmenu`}]
-           {title: '𝐒𝐓𝐎𝐑𝐀𝐆𝐄 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ sᴛᴏʀᴀɢᴇ ᴍᴇɴᴜ", rowId: prefix+`storagemenu`}]
-           {title: '𝐄𝐗𝐓𝐑𝐀 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴇxᴛʀᴀ ᴍᴇɴᴜ", rowId: prefix+`extramenu`}]
-           {title: '𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇɴᴜ", rowId: prefix+`groupmenu`}]
-           {title: '𝐑𝐔𝐋𝐄𝐒', description: "sʜᴏᴡ ᴛʜᴇ ʀᴜʟᴇs ᴏғ ʙᴏᴛ", rowId: prefix+`rules`}]
+           {title: '𝐎𝐖𝐍𝐄𝐑', description: "sʜᴏᴡ ᴛʜᴇ ᴏᴡɴᴇʀ", rowId: prefix+'owner'},
+           {title: '𝐂𝐑𝐄𝐃𝐈𝐓𝐒', description: "sʜᴏᴡ ᴛʜᴇ ᴄʀᴇᴅɪᴛs ᴏғ ᴛᴀᴜʀᴜs", rowId: prefix+'credits'},
+           {title: '𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴏᴡɴᴇʀ ᴍᴇɴᴜ", rowId: prefix+'ownermenu'},
+           {title: '𝐄𝐃𝐈𝐓 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴇᴅɪᴛ ᴍᴇɴᴜ", rowId: prefix+'editmenu'}]
+           {title: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ", rowId: prefix+'downloadmenu'}]
+           {title: '𝐒𝐓𝐎𝐑𝐀𝐆𝐄 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ sᴛᴏʀᴀɢᴇ ᴍᴇɴᴜ", rowId: prefix+'storagemenu'}]
+           {title: '𝐄𝐗𝐓𝐑𝐀 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ᴇxᴛʀᴀ ᴍᴇɴᴜ", rowId: prefix+'extramenu'}]
+           {title: '𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔', description: "sʜᴏᴡ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇɴᴜ", rowId: prefix+'groupmenu'}]
+           {title: '𝐑𝐔𝐋𝐄𝐒', description: "sʜᴏᴡ ᴛʜᴇ ʀᴜʟᴇs ᴏғ ʙᴏᴛ", rowId: prefix+'rules'}]
           section = [{title: "${jmn} -  ${jmo}\n${week} - ${calender}", rows: rows}]
-          button = {buttonText: '𝐇𝐄𝐋𝐏', description: `\n\n𝐇𝐄𝐘 @${sender.split("@")[0]}\n\n𝐁𝐀𝐓𝐓𝐄𝐑𝐘 : ${baterai}%\n\n𝐈'𝐌 𝐆𝐎𝐎𝐃 𝐓𝐎 𝐒𝐄𝐄 𝐘𝐎𝐔\n\n\n*𝐓𝐀𝐔𝐑𝐔𝐒 𝐌𝐄𝐍𝐔 𝐇𝐄𝐑𝐄*`,
+          button = {buttonText: '𝐇𝐄𝐋𝐏', description: '\n\n𝐇𝐄𝐘 @${sender.split("@")[0]}\n\n𝐁𝐀𝐓𝐓𝐄𝐑𝐘 : ${baterai}%\n\n𝐈'𝐌 𝐆𝐎𝐎𝐃 𝐓𝐎 𝐒𝐄𝐄 𝐘𝐎𝐔\n\n\n*𝐓𝐀𝐔𝐑𝐔𝐒 𝐌𝐄𝐍𝐔 𝐇𝐄𝐑𝐄*',
           sections: section, listType: 1}
 					bosco.sendMessage(from, button, MessageType.listMessage, {quoted: ftroli})
                     break
