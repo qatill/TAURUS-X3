@@ -996,9 +996,9 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  description: `𝙷𝙸  𝙱𝚁𝙾 @${stod.split('@')[0]} 
  
 
- ‣ ᴏᴡɴᴇʀ             :  ${ownerName}
+ ‣ ᴏᴡɴᴇʀ             : ${setting.ownerName}⁩
 
- ‣ ʙᴏᴛ ɴᴀᴍᴇ        : ${botName}
+ ‣ ʙᴏᴛ ɴᴀᴍᴇ        : ᴛᴀᴜʀᴜs-x³
  
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ       : ᴍᴜʜᴀᴍᴍᴇᴅ
 
@@ -1015,14 +1015,14 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  ‣ 𝚃𝙸𝙼𝙴 : ${jmn} `,
  sections: [
                      {
-                      "title": `${setting.ownerName}⁩`,
+                      "title": `ᴛʜɪs ʙᴏᴛ ɪs ᴍᴀᴅᴇ ʙʏ ᴍᴜʜᴀᴍᴍᴇᴅ`,
  rows: [
-                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"1"},   
-                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"2"}, 
-                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"3"},  
-                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"4"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"5"},
-                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"6"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"7"},                                        {title: 'AllMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"allmenu"},
-                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ Dᴇᴛᴀɪʟs", rowId:"8"},
+                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"groupmenu"},   
+                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"ownermenu"}, 
+                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"downloadmenu"},  
+                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"editmenu"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"storagemenu"},
+                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"extramenu"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"rules"},                                        {title: 'Game', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"game"},
+                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ Dᴇᴛᴀɪʟs", rowId:"owner"},
                         ]
                      }],
  listType: 1
