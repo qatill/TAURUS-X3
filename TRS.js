@@ -985,7 +985,7 @@ case 'help':{
 				let content = fs.readFileSync(`image/${thumbnail}`)
 const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
-let p1 = await bosco.getStatus(`${yy})
+let p1 = await bosco.getStatus(`${yy}`)
 koko = `${owner}@s.whatsapp.net`
 groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
 privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
