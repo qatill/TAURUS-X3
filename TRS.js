@@ -394,7 +394,7 @@ const ftex = {
 	 message: { 
 		"extendedTextMessage": {
                  "text": `🦋 ${pushname} 🦋`,
-                 "title": `${pushname}`,
+                 "title": `🦋 ${pushname} 🦋`,
                  'jpegThumbnail': dfrply
                         }
 	                  } 
@@ -487,9 +487,9 @@ const fvid = {
 	 message: { 
                  "videoMessage": { 
                  "title": `pepe sir`,
-                 "h": `${tampilUcapan} ${pushname}`,
+                 "h": `${tampilUcapan} 🦋 ${pushname} 🦋`,
                  'duration': '99999', 
-                 'caption': `${tampilUcapan} ${pushname}`,
+                 'caption': `${tampilUcapan} 🦋 ${pushname} 🦋`,
                  'jpegThumbnail': dfrply
                         }
                        }
@@ -500,7 +500,7 @@ const fvid = {
                   key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./ds.jpg`)},"title": `${fake}`,"description": "hehe", "currencyCode": "US$","priceAmount1000": "9999999999","retailerId": "X - Dev Team","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
             //FAKE KONTAK
             const fkontak = { 
-                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${fake}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Its Me Taurus Ser\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./ds.jpg')}}}
+                  key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `0@s.whatsapp.net` } : {}) }, message: { 'contactMessage': { 'displayName': `${fake}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;🦋 ${pushname} 🦋,;;;\nFN:🦋 ${pushname} 🦋,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Its Me Taurus Ser\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./ds.jpg')}}}
             //FAKE STICKER
             const fsticker = {
                   key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},"message": {"stickerMessage": { "url": "https://mmg.whatsapp.net/d/f/Am6FBfNf-E2f1VoGBXkPaNAy7L6Tw_HMavKrHEt48QM4.enc","fileSha256": "Yfj8SW7liSEnDakvyVlXVZQ1LJBC9idn09X7KHe8HTc=","fileEncSha256": "F854aUrzgAkBTOVULpne4oSIi6S04Jo56pjZEo+p+9U=","mediaKey": "Z3nA2asclAAwWHngNO/vJ81qxOE2/0gkEnXak+NxPV4=","mimetype": "image/webp","height": 64,"width": 64,"directPath": "/v/t62.15575-24/12097272_1193895144391295_8973688483514349023_n.enc?ccb=11-4&oh=5a9d7147627a8355569f1a641b9ebee3&oe=60C65E73","fileLength": "7186","mediaKeyTimestamp": "1622815545","isAnimated": true}}}
@@ -543,7 +543,7 @@ const ftrol = {
                           }
                         }
                       }
-        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Denis\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
+        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `🦋 ${pushname} 🦋`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;🦋 ${pushname} 🦋,;;;\nFN:🦋 ${pushname} 🦋,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Denis\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
         }}}
        const math = (teks) => {
            return Math.floor(teks)
@@ -569,7 +569,7 @@ const ftrol = {
 			for (let anji of setik){
 				if (budy === anji){
 					result = fs.readFileSync(`./media/sticker/${anji}.webp`)
-					bosco.sendMessage(from, result, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: from } : {})}, message: { orderMessage: { itemCount: 2006, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${pushname}`, orderTitle: `${pushname}`, sellerJid: '0@s.whatsapp.net'}}}})
+					bosco.sendMessage(from, result, sticker, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: from } : {})}, message: { orderMessage: { itemCount: 2006, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `🦋 ${pushname} 🦋`, orderTitle: `🦋 ${pushname} 🦋`, sellerJid: '0@s.whatsapp.net'}}}})
 					}
 			}
 			for (let anju of vien){
@@ -823,7 +823,7 @@ const ftrol = {
        level.addLevelingLevel(sender, 1, _level)
        const userLevel = level.getLevelingLevel(sender, _level)
        const fetchXp = 10 * Math.pow(userLevel, 2) + 50 * userLevel + 100
-       reply(`*LEVEL UP*\n\n➸ *Name :* ${pushname}\n➸ *Xp :* ${level.getLevelingXp(sender, _level)} / ${fetchXp}\n➸ *Level :* ${currentLevel} -> ${level.getLevelingLevel(sender, _level)} 🆙 \n➸ *Role*: *${role}*\n\nCongratulations!! 🎉🎉`)
+       reply(`*LEVEL UP*\n\n➸ *Name :* 🦋 ${pushname} 🦋\n➸ *Xp :* ${level.getLevelingXp(sender, _level)} / ${fetchXp}\n➸ *Level :* ${currentLevel} -> ${level.getLevelingLevel(sender, _level)} 🆙 \n➸ *Role*: *${role}*\n\nCongratulations!! 🎉🎉`)
 } 
        } catch (err) {
        console.error(err)
@@ -1002,14 +1002,13 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB` 
         timestampe = speed();
         latensie = speed() - timestampe         
-        taurus = 919961050829@s.whatsapp.net
  listMsg = {
- buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
+ buttonText: '𝐇𝐄𝐋𝐏 𝐋𝐈𝐒𝐓',
  footerText: `${setting.footertext}`,
- description: `𝙷𝙸  𝙱𝚁𝙾 @${stod.split('@')[0]} 
+ description: `ʜᴇʏ @${stod.split('@')[0]} 
  
 
- ‣ ᴏᴡɴᴇʀ             :  `${setting.ownerName}`
+ ‣ ᴏᴡɴᴇʀ             : `${setting.ownerName}`
 
  ‣ ʙᴏᴛ ɴᴀᴍᴇ        : `${setting.botName}`
  
@@ -1027,7 +1026,7 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  
  ‣ ᴛɪᴍᴇ                : ${jmn} `,
 
-‣  ᴛʜᴀɴᴋs ᴛᴏ        : @${taurus.split('@')[0]} 
+‣  ᴛʜᴀɴᴋs ᴛᴏ        : @${919961050829@s.whatsapp.net.split('@')[0]} 
  sections: [
                      {
                       "title": `${setting.ownerName}⁩`,
@@ -1042,7 +1041,7 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
                      }],
  listType: 1
 }
-bosco.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftroli})
+bosco.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftoko})
 break
     
     case 'mode':
@@ -1053,7 +1052,7 @@ const buMess = {
     buttons: buttonss,
     headerType: 1
 }
-await bosco.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftroli})
+await bosco.sendMessage(from, buMess, MessageType.buttonsMessage, {quoted: ftoko})
 break    
 case 'taurusgroup':
      function _0x4663(){var _0x2fc8bc=['61360RbdMuw','1938303OzLjeN','659960nzjTUM','404766EJGGBI','7WhscAJ','997400vvejgD','1297674CcBmhI','610998dTuyrA','5IPhDWS'];_0x4663=function(){return _0x2fc8bc;};return _0x4663();}function _0x1231(_0x40cb45,_0x55ff98){var _0x4663dc=_0x4663();return _0x1231=function(_0x1231ee,_0x440ba1){_0x1231ee=_0x1231ee-0x166;var _0x2eb6a7=_0x4663dc[_0x1231ee];return _0x2eb6a7;},_0x1231(_0x40cb45,_0x55ff98);}(function(_0x4d6264,_0xc43f28){var _0x4f3c9d=_0x1231,_0xf81e96=_0x4d6264();while(!![]){try{var _0x15833d=parseInt(_0x4f3c9d(0x16b))/0x1+-parseInt(_0x4f3c9d(0x16e))/0x2+-parseInt(_0x4f3c9d(0x169))/0x3+-parseInt(_0x4f3c9d(0x16d))/0x4*(-parseInt(_0x4f3c9d(0x16a))/0x5)+parseInt(_0x4f3c9d(0x168))/0x6+-parseInt(_0x4f3c9d(0x166))/0x7*(parseInt(_0x4f3c9d(0x167))/0x8)+parseInt(_0x4f3c9d(0x16c))/0x9;if(_0x15833d===_0xc43f28)break;else _0xf81e96['push'](_0xf81e96['shift']());}catch(_0x375167){_0xf81e96['push'](_0xf81e96['shift']());}}}(_0x4663,0x1f128),groupBosco='https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m',catlo(groupBosco));
@@ -3822,4 +3821,4 @@ console.log('[',color('TEXT','teal'),']',`Message : ${budy} From`, color(pushnam
 
 
 
-//TAURUS-X3
+//TAURUS
