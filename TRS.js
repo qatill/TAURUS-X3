@@ -968,34 +968,99 @@ const ftrol = {
 			 "contacts": ini_list 
 			 }, 'contactsArrayMessage', {quoted:ftroli})
 		     break
-        case 'menu':
-        case 'taurus':
-        case 'cmd':
-        groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
-        privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-        totalChat = await bosco.chats.all()
-        bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
-        bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
-        timestampe = speed();
-        latensie = speed() - timestampe
- hehe = `
- Hɪ Bʀᴏ @${sender.split("@")[0]}
- Pʀɪᴠᴀᴛᴇ : ${privat.length}
- Gʀᴏᴜᴘs : ${groups.length}
- Tᴏᴛᴀʟ : ${totalChat.length}
- Sᴘᴇᴇᴅ : ${latensie.toFixed(4)}
- Bᴀᴛᴛᴇʀʏ : ${baterai}%\n
- ${jmn} -  ${jmo}\n${week} - ${calender}
- `
- menubutton = [{buttonId:`${prefix}help`,buttonText:{displayText:'ᴍᴇɴᴜ'},type:1},
- {buttonId:`${prefix}script`,buttonText:{displayText:'sᴄʀɪᴘᴛ'},type:1},
- {buttonId:`${prefix}taurusgroup`,buttonText:{displayText:'ʙᴏᴛ ɢʀᴏᴜᴘ'},type:1}
-]
- menumessage = { contentText: ` `, footerText: `${hehe}`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
- bosco.sendMessage(from, menumessage, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [sender]},})
-           break
+case 'help':{
+			try {
+				chatt = await bosco.getProfilePicture(sender)
+				} catch {
+				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
+				}
+			let ch = await getBuffer(chatt)
+			try{
+			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-boscobot.herokuapp.com/visits')
+			} catch {
+				hit_total = { 
+					value : "-"
+					}
+				}
+				let content = fs.readFileSync(`image/${thumbnail}`)
+const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
+let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
+let p1 = await bosco.getStatus(`${yy})
+koko = `${owner}@s.whatsapp.net`
+groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
+privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+totalChat = await bosco.chats.all()   
+ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB` 
+timestampe = speed();
+latensie = speed() - timestampe          
+anunya = process.uptime()
+ini_anu =`${fake}
 
- case 'help':
+
+╭─❒ 「 ʙᴏᴛ ɪɴғᴏ 」 
+├‣ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ :  @${koko.split('@')[0]}
+├‣ ᴘʀᴇғɪx :   `${prefix}
+├‣ ʙᴏᴛ ᴏᴡɴᴇʀ : ᴍᴜʜᴀᴍᴍᴇᴅ
+├‣ sᴘᴇᴇᴅ :  ${latensie.toFixed(4)} sᴇᴄᴏɴᴅ
+├‣ ʀᴀᴍ ᴜsᴀɢᴇ : ${ram2} 
+├‣ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs : ${privat.length}
+├‣ ɢʀᴏᴜᴘ ᴄʜᴀᴛs   :  ${groups.length} 
+├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
+╰❒ 
+`
+if(typemenu == 'document'){
+sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, taurus, ini_mark)
+} 
+if(typemenu == 'troli'){
+sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+} 
+if(typemenu == 'troli2'){
+sendTroli2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+} 
+if(typemenu == 'katalog'){
+sendKatalog2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+} 
+if(typemenu == 'katalog2'){
+sendKatalog3(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+} 
+if(typemenu == 'list'){
+sendList(sender)
+} 
+if(typemenu == 'location'){ 
+let content1 = fs.readFileSync('./hemme.jpg')
+bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
+bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
+
+const taurusbutton = [
+  {buttonId: '`${prefix}owner', buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},
+  {buttonId: '`${prefix}stat', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
+  {buttonId: '`${prefix}help', buttonText: {displayText: 'ʜᴇʟᴘ'}, type: 1}
+]
+
+const btn1 = {
+    contentText: allmenu(prefix, bosco1, bosco2, latensie),
+    footerText: `${hehe}`,
+    buttons: taurusbutton,
+    headerType: 6,
+    locationMessage: bosco2.message.locationMessage
+}
+
+bosco.sendMessage(from,  btn1, MessageType.buttonsMessage,{
+        caption: 'TAURUS ©2K21',
+        "contextInfo": {
+            text: 'hi',
+            "forwardingScore": 1000000000,
+            isForwarded: true,
+            sendEphemeral: true,
+            "mentionedJid" : @${sender.split("@")[0]},
+            },
+			quoted: ftroli,sendEphemeral: true 
+			})
+}
+}
+break
+
+ case 'menu':
 groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
         totalChat = await bosco.chats.all()   
@@ -1008,12 +1073,10 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  description: `ʜᴇʏ @${stod.split('@')[0]} 
  
 
- ‣ ᴏᴡɴᴇʀ             : `${setting.ownerName}`
+ ‣ ᴏᴡɴᴇʀ             :  ᴍᴜʜᴀᴍᴍᴇᴅ
 
- ‣ ʙᴏᴛ ɴᴀᴍᴇ        : `${setting.botName}`
+ ‣ ʙᴏᴛ ɴᴀᴍᴇ        : 🦋 ᴛᴀᴜʀᴜs-x³ 🦋
  
- ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ       : ᴍᴜʜᴀᴍᴍᴇᴅ
-
  ‣ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs : ${privat.length}
  
  ‣ ɢʀᴏᴜᴘ ᴄʜᴀᴛs   :  ${groups.length} 
@@ -1026,7 +1089,6 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  
  ‣ ᴛɪᴍᴇ                : ${jmn} `,
 
-‣  ᴛʜᴀɴᴋs ᴛᴏ        : @${919961050829@s.whatsapp.net.split('@')[0]} 
  sections: [
                      {
                       "title": `${setting.ownerName}⁩`,
@@ -1309,7 +1371,7 @@ catlo(download1)
 
 4. 𝙳𝙾𝙽𝚃 𝙼𝙸𝚂𝚄𝚂𝙴 𝚃𝙷𝙴 𝙱𝙾𝚃
 
-5. 𝙰𝙽𝚈 𝙿𝚁𝙾𝙱𝙻𝙰𝙼 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁
+5. 𝙰𝙽𝚈 𝙿𝚁????𝙻𝙰𝙼 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁
 
 *wa.me/${owner}*`
        osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": taurus, "surface": 'CATALOG'}}, {quoted: ftroli})
@@ -3821,4 +3883,3 @@ console.log('[',color('TEXT','teal'),']',`Message : ${budy} From`, color(pushnam
 
 
 
-//TAURUS
