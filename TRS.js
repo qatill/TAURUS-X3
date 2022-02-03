@@ -1001,16 +1001,17 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         totalChat = await bosco.chats.all()   
         ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB` 
         timestampe = speed();
-        latensie = speed() - timestampe          
+        latensie = speed() - timestampe         
+        taurus = 919961050829@s.whatsapp.net
  listMsg = {
  buttonText: '𝙻𝙸𝚂𝚃 𝙼𝙴𝙽𝚄⁩',
  footerText: `${setting.footertext}`,
  description: `𝙷𝙸  𝙱𝚁𝙾 @${stod.split('@')[0]} 
  
 
- ‣ ᴏᴡɴᴇʀ             :  `${ownerName}`
+ ‣ ᴏᴡɴᴇʀ             :  `${setting.ownerName}`
 
- ‣ ʙᴏᴛ ɴᴀᴍᴇ        : `${botName}`
+ ‣ ʙᴏᴛ ɴᴀᴍᴇ        : `${setting.botName}`
  
  ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ       : ᴍᴜʜᴀᴍᴍᴇᴅ
 
@@ -1024,10 +1025,12 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  
  ‣ sᴘᴇᴇᴅ              : ${latensie.toFixed(4)} Second 
  
- ‣ 𝚃𝙸𝙼𝙴 : ${jmn} `,
+ ‣ ᴛɪᴍᴇ                : ${jmn} `,
+
+‣  ᴛʜᴀɴᴋs ᴛᴏ        : @${taurus.split('@')[0]} 
  sections: [
                      {
-                      "title": `${ownerName}⁩`,
+                      "title": `${setting.ownerName}⁩`,
  rows: [
                 {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"`${prefix}groupmenu"},   
                 {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"`${prefix}ownermenu"}, 
@@ -3819,3 +3822,4 @@ console.log('[',color('TEXT','teal'),']',`Message : ${budy} From`, color(pushnam
 
 
 
+//TAURUS-X3
