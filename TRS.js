@@ -999,7 +999,7 @@ ini_anu =`${fake}
 
 ╭─❒ 「 ʙᴏᴛ ɪɴғᴏ 」 
 ├‣ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ :  @${koko.split('@')[0]}
-├‣ ᴘʀᴇғɪx :   `${prefix}
+├‣ ᴘʀᴇғɪx :   ${prefix}
 ├‣ ʙᴏᴛ ᴏᴡɴᴇʀ : ᴍᴜʜᴀᴍᴍᴇᴅ
 ├‣ sᴘᴇᴇᴅ :  ${latensie.toFixed(4)} sᴇᴄᴏɴᴅ
 ├‣ ʀᴀᴍ ᴜsᴀɢᴇ : ${ram2} 
@@ -1032,9 +1032,9 @@ bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
 const taurusbutton = [
-  {buttonId: '`${prefix}owner', buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},
-  {buttonId: '`${prefix}stat', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
-  {buttonId: '`${prefix}help', buttonText: {displayText: 'ʜᴇʟᴘ'}, type: 1}
+  {buttonId: '`${prefix}owner`', buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},
+  {buttonId: '`${prefix}stat`', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
+  {buttonId: '`${prefix}help`', buttonText: {displayText: 'ʜᴇʟᴘ'}, type: 1}
 ]
 
 const btn1 = {
@@ -1093,12 +1093,12 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
                      {
                       "title": `${setting.ownerName}⁩`,
  rows: [
-                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"`${prefix}groupmenu"},   
-                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"`${prefix}ownermenu"}, 
-                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"`${prefix}downloadmenu"},  
-                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"`${prefix}editmenu"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"`${prefix}storagemenu"},
-                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"`${prefix}extramenu"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"`${prefix}rules"},                                        {title: 'AllMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"`${prefix}allmenu"},
-                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"`${prefix}owner"},
+                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"`${prefix}groupmenu`"},   
+                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"`${prefix}ownermenu`"}, 
+                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"`${prefix}downloadmenu`"},  
+                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"`${prefix}editmenu`"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"`${prefix}storagemenu`"},
+                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"`${prefix}extramenu`"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"`${prefix}rules`"},                                        {title: 'AllMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"`${prefix}allmenu`"},
+                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"`${prefix}owner`"},
                         ]
                      }],
  listType: 1
