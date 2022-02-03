@@ -1052,7 +1052,7 @@ bosco.sendMessage(from,  btn1, MessageType.buttonsMessage,{
             "forwardingScore": 1000000000,
             isForwarded: true,
             sendEphemeral: true,
-            "mentionedJid" : @${sender.split("@")[0]},
+            "mentionedJid" : online,
             },
 			quoted: ftroli,sendEphemeral: true 
 			})
