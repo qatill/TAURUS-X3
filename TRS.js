@@ -242,6 +242,7 @@ module.exports = bosco = async (bosco, mek) => {
         mention != undefined ? mention.push(mentionByreply) : []
         const mentionUser = mention != undefined ? mention.filter(n => n) : []
 		const dfrply = fs.readFileSync('./ds.jpg')
+		const frply = fs.readFileSync('./taurus.mp4')
 		const atibot = m.isBaileys
 		const isRegister = register.includes(sender)
         const isOwner = ownerNumber.includes(sender)
@@ -1016,17 +1017,17 @@ sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_ver
 if(typemenu == 'troli2'){
 sendTroli2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
 } 
-if(typemenu == 'katalog'){
-sendKatalog2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+if(typemenu == 'catalog'){
+sendcatalog2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
 } 
-if(typemenu == 'katalog2'){
-sendKatalog3(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
+if(typemenu == 'catalog2'){
+sendcatalog3(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
 } 
 if(typemenu == 'list'){
 sendList(sender)
 } 
 if(typemenu == 'location'){ 
-let content1 = fs.readFileSync('./hemme.jpg')
+let content1 = fs.readFileSync('./taurus.mp4')
 bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
@@ -2544,7 +2545,7 @@ teks += `*Title : ${get_result[i].title}*
              bosco.sendMessage(from, data, audio, { quoted: ftroli })
              break
       case 'alive':
-              bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
+              bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
               bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
               groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
@@ -2556,22 +2557,59 @@ teks += `*Title : ${get_result[i].title}*
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 teks = `
-*I ᴀᴍ Sᴛɪʟʟ Aʟɪᴠᴇ Bʀᴏ :)*
-*Sᴘᴇᴇᴅ :* ${latensie.toFixed(4)} Second
-*Rᴀᴍ Usᴀɢᴇ :* ${ram2}
-*Bᴀᴛᴛᴇʀʏ :* ${baterai}% ${charger}
-*Pʟᴀᴛғᴏʀᴍ :* ${os.platform()}
-*Uᴘᴛɪᴍᴇ :* ${runtime(process.uptime())}
-*Wᴀ ᴠᴇʀsɪᴏɴ :* ${bosco.user.phone.wa_version}
-*Os ᴠᴇʀsɪᴏɴ :* ${bosco.user.phone.os_version}
-*Dᴇᴠɪᴄᴇ Mᴀɴᴜғᴀᴄᴛᴜʀᴇ :* ${bosco.user.phone.device_manufacturer}
-*Dᴇᴠɪᴄᴇ Mᴏᴅᴇʟ :* ${bosco.user.phone.device_model}
+
+
+‣ *ɪ ᴀᴍ sᴛɪʟʟ ᴀʟɪᴠᴇ ʙʀᴏ_☘︎*
+
+
+‣ *sᴘᴇᴇᴅ :-*
+➪ ${latensie.toFixed(4)} Second
+
+
+‣ *ʀᴀᴍ Usᴀɢᴇ :-*
+➪ ${ram2}
+
+
+‣ *ʙᴀᴛᴛᴇʀʏ :-*
+➪ ${baterai}% ${charger}
+
+
+‣ *ᴘʟᴀᴛғᴏʀᴍ :-*
+➪ ${os.platform()}
+
+
+‣ *ᴜᴘᴛɪᴍᴇ :-*
+➪ ${runtime(process.uptime())}
+
+
+‣ *ᴡᴀ ᴠᴇʀsɪᴏɴ :-*
+➪ ${bosco.user.phone.wa_version}
+
+
+‣ *ᴏs ᴠᴇʀsɪᴏɴ :-*
+➪ ${bosco.user.phone.os_version}
+
+
+‣ *ᴅᴇᴠɪᴄᴇ ᴍᴀɴᴜғᴀᴄᴛᴜʀᴇ :-*
+➪ ${bosco.user.phone.device_manufacturer}
+
+
+‣ *ᴅᴇᴠɪᴄᴇ ᴍᴏᴅᴇʟ :-*
+➪ ${bosco.user.phone.device_model}
 `
-    menubutton = [{buttonId:`${prefix}credits`,buttonText:{displayText:'ᴄʀᴇᴅɪᴛs'},type:1}
+                menubutton = [
+{buttonId:`credits`,buttonText:{displayText:'ᴄʀᴇᴅɪᴛs'},type:1},
 ]
- menumessage = { contentText: `${teks}`, footerText: `sᴜʙsᴄʀɪʙᴇ ᴛᴀᴜʀᴜsᴇᴅɪᴛs ᴏɴ ʏᴛ`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
- bosco.sendMessage(from, menumessage, MessageType.buttonsMessage)
-             break  
+mhan = await bosco.prepareMessage(from, pfrply, video, {thumbnail: frply})
+const taurus1 = {
+videoMessage: mhan.message.videoMessage,
+contentText: `${teks}`,
+footerText: `_𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🦋✨_`,
+buttons: menubutton,
+headerType: 5
+}
+bosco.sendMessage(from, taurus1, MessageType.buttonsMessage, { quoted: ftroli, caption: teks, contextInfo: { mentionedJid: [sender]}})
+             break 
       case 'buttons5':
               const mathdare = dare[Math.floor(Math.random() * (dare.length))]
               result = `${mathdare}`
