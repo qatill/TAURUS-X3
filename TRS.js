@@ -973,7 +973,7 @@ case 'help':{
 			try {
 				chatt = await bosco.getProfilePicture(sender)
 				} catch {
-				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
+				chatt = 'https://telegra.ph/file/40151a65238ba2643152d.jpg'
 				}
 			let ch = await getBuffer(chatt)
 			try{
@@ -1009,11 +1009,7 @@ ini_anu =`${fake}
 ├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
 ╰❒ 
 `
-if(help == 'document'){
-sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, koko, ini_mark)
-} 
-if(help == 'location'){ 
-let content1 = fs.readFileSync('./ds.jpg')
+let content1 = fs.readFileSync('./taurus.mp4')
 bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
@@ -3142,6 +3138,7 @@ case 'emoji':
 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ 
 ɪᴛs ᴜsᴇᴅ ғᴏʀ ᴇᴅɪᴛ
 ʏᴏᴜʀ ᴛᴇxᴛ ᴛᴏ ɪᴍᴀɢᴇ
+
 sᴏᴍᴇ ᴍᴀᴋᴇʀ ᴡɪʟʟ ɴᴏᴛ ᴡᴏʀᴋ 
 ʙᴇᴄᴜᴀsᴇ ɪᴛs ᴀᴘɪ ᴋᴇʏ ᴘʀᴏʙʟᴇᴍ
 
@@ -3389,7 +3386,7 @@ catlo(txt1)
                reply(txtx.slice(0, 65536) + '')
 }
                break
-        case 'searchmsg':  //by ANU TEAM
+        case 'searchmsg':  //Taurus
                if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
                teks = arg
                if (teks.includes("|")) { 
