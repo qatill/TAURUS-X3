@@ -242,7 +242,8 @@ module.exports = bosco = async (bosco, mek) => {
         mention != undefined ? mention.push(mentionByreply) : []
         const mentionUser = mention != undefined ? mention.filter(n => n) : []
 		const dfrply = fs.readFileSync('./ds.jpg')
-		const frply = fs.readFileSync('./taurus.mp4')
+		const pfrply = fs.readFileSync('./taurus.mp4')
+		const frply = fs.readFileSync('./taurus.jpg')
 		const atibot = m.isBaileys
 		const isRegister = register.includes(sender)
         const isOwner = ownerNumber.includes(sender)
