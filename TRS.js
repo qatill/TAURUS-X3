@@ -961,7 +961,7 @@ const ftrol = {
 			const vname_ = bosco.contacts[i] != undefined ? bosco.contacts[i].vname || bosco.contacts[i].notify : undefined
 		     ini_list.push({
 			 "displayName": 'Owner taurus',
-			 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${bosco.user.name}`}\nORG: taurus;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ẉa.me/⃝!ᴍ.ꪶ͢Tꫝᴜʀᴜs✿Sᴇʀꫂ⁩\nEND:VCARD`
+			 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${bosco.user.name}`}\nORG: taurus;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ꪶ͢Tꫝᴜʀᴜs✿Sᴇʀꫂ⁩\nEND:VCARD`
 			  })
 			  }
 			 hehe = await bosco.sendMessage(from, {
@@ -973,7 +973,7 @@ case 'help':{
 			try {
 				chatt = await bosco.getProfilePicture(sender)
 				} catch {
-				chatt = 'https://telegra.ph/file/40151a65238ba2643152d.jpg'
+				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
 				}
 			let ch = await getBuffer(chatt)
 			try{
@@ -983,7 +983,7 @@ case 'help':{
 					value : "-"
 					}
 				}
-				let content = fs.readFileSync('./taurus.jpg')
+				let content = fs.readFileSync('./taurus.mp4')
 const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync('./taurus.jpg')})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await bosco.getStatus(`${yy}`)
@@ -1009,6 +1009,8 @@ ini_anu =`${fake}
 ├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
 ╰❒ 
 `
+
+if(typemenu == 'location'){ 
 let content1 = fs.readFileSync('./taurus.mp4')
 bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
@@ -1028,13 +1030,13 @@ const btn1 = {
 }
 
 bosco.sendMessage(from,  btn1, MessageType.buttonsMessage,{
-        caption: '©2K22 TAURUS',
+        caption: 'TAURUS ©2K21',
         "contextInfo": {
             text: 'hi',
             "forwardingScore": 1000000000,
             isForwarded: true,
             sendEphemeral: true,
-            "mentionedJid" : online,
+            "mentionedJid" : sender,
             },
 			quoted: ftroli,sendEphemeral: true 
 			})
@@ -3138,7 +3140,6 @@ case 'emoji':
 ʜᴇʀᴇ ɪs ʏᴏᴜʀ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ 
 ɪᴛs ᴜsᴇᴅ ғᴏʀ ᴇᴅɪᴛ
 ʏᴏᴜʀ ᴛᴇxᴛ ᴛᴏ ɪᴍᴀɢᴇ
-
 sᴏᴍᴇ ᴍᴀᴋᴇʀ ᴡɪʟʟ ɴᴏᴛ ᴡᴏʀᴋ 
 ʙᴇᴄᴜᴀsᴇ ɪᴛs ᴀᴘɪ ᴋᴇʏ ᴘʀᴏʙʟᴇᴍ
 
@@ -3386,7 +3387,7 @@ catlo(txt1)
                reply(txtx.slice(0, 65536) + '')
 }
                break
-        case 'searchmsg':  //Taurus
+        case 'searchmsg':  //by ANU TEAM
                if (args.length < 1) return reply(`*What Message Are You Looking For?\nEx-: ${prefix + command} halo|10*`)
                teks = arg
                if (teks.includes("|")) { 
