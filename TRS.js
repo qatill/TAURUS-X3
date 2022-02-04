@@ -983,7 +983,7 @@ case 'help':{
 					value : "-"
 					}
 				}
-				let content = fs.readFileSync('./taurus.jpg')
+				let content = fs.readFileSync('./taurus.mp4')
 const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync('./taurus.jpg')})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await bosco.getStatus(`${yy}`)
@@ -996,8 +996,7 @@ timestampe = speed();
 latensie = speed() - timestampe          
 anunya = process.uptime()
 ini_anu =`${fake}
-
-
+teks = `
 ╭─❒ 「 ʙᴏᴛ ɪɴғᴏ 」 
 ├‣ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ :  @${koko.split('@')[0]}
 ├‣ ᴘʀᴇғɪx :   ${prefix}
@@ -1009,37 +1008,19 @@ ini_anu =`${fake}
 ├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
 ╰❒ 
 `
-if(typemenu == 'document'){
-sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, koko, ini_mark)
-} 
-if(typemenu == 'troli'){
-sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'troli2'){
-sendTroli2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'catalog'){
-sendcatalog2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'catalog2'){
-sendcatalog3(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'list'){
-sendList(sender)
-} 
-if(typemenu == 'location'){ 
+{ 
 let content1 = fs.readFileSync('./taurus.mp4')
 bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
 const taurusbutton = [
   {buttonId: '`${prefix}owner`', buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},
-  {buttonId: '`${prefix}stat`', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
+  {buttonId: '`${prefix}alive`', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
   {buttonId: '`${prefix}help`', buttonText: {displayText: 'ʜᴇʟᴘ'}, type: 1}
 ]
 
 const btn1 = {
-    contentText: allmenu(prefix, bosco1, bosco2, latensie),
+    contentText: `${teks}`,
     footerText: `${hehe}`,
     buttons: taurusbutton,
     headerType: 6,
@@ -1069,9 +1050,9 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         timestampe = speed();
         latensie = speed() - timestampe         
  listMsg = {
- buttonText: '𝐇𝐄𝐋𝐏 𝐋𝐈𝐒𝐓',
- footerText: `${setting.footertext}`,
- description: `ʜᴇʏ @${sender.split("@")[0]}
+ buttonText: '𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔',
+ footerText: `🌈🌻𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🦋✨`,
+ description: `*ʜᴇʏ* @${sender.split("@")[0]}
  
 
  ‣ ᴏᴡɴᴇʀ             :  ᴍᴜʜᴀᴍᴍᴇᴅ
@@ -1092,14 +1073,14 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
 
  sections: [
                      {
-                      "title": `${setting.ownerName}⁩`,
+                      "title": `${fake}`,
  rows: [
-                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"`${prefix}groupmenu`"},   
-                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"`${prefix}ownermenu`"}, 
-                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"`${prefix}downloadmenu`"},  
-                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"`${prefix}editmenu`"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"`${prefix}storagemenu`"},
-                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"`${prefix}extramenu`"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"`${prefix}rules`"},                                        {title: 'AllMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"`${prefix}allmenu`"},
-                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"`${prefix}owner`"},
+                {title: '𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇɴᴜ", rowid: prefix+"groupmenu"},
+                {title: '𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴍᴇɴᴜ", rowid: prefix+"ownermenu"},
+                {title: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ", rowid: prefix+"downloadmenu"},
+                {title: '𝐄𝐃𝐈𝐓 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴇᴅɪᴛ ᴍᴇɴᴜ", rowid: prefix+"editmenu"},                                {title: '𝐒𝐓𝐎𝐑𝐀𝐆𝐄 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ sᴛᴏʀᴀɢᴇ ᴍᴇɴᴜ", rowid: prefix+"storagemenu"},
+                {title: '𝐄𝐗𝐓𝐑𝐀 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴍᴇɴᴜ", rowid: prefix+"extramenu"},                                          {title: '𝐑𝐔𝐋𝐄𝐒', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ʀᴜʟᴇs ᴏғ ᴛʜᴇ ʙᴏᴛ", rowid: prefix+"rules"},                                        {title: '𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ", rowid: prefix+"maker"},
+                {title: '𝐎𝐖𝐍𝐄𝐑', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴏᴡɴᴇʀ", rowid: prefix+"owner"},
                         ]
                      }],
  listType: 1
@@ -2605,7 +2586,7 @@ mhan = await bosco.prepareMessage(from, pfrply, video, {thumbnail: frply})
 const taurus1 = {
 videoMessage: mhan.message.videoMessage,
 contentText: `${teks}`,
-footerText: `_𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🦋✨_`,
+footerText: `𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🦋✨`,
 buttons: menubutton,
 headerType: 5
 }
@@ -2727,18 +2708,18 @@ bosco.sendMessage(from, taurus1, MessageType.buttonsMessage, { quoted: ftroli, c
                res = await yts(`${teks}`).catch(e => {
                reply('*The Query Error You Entered Does Not Exist*')
                })
-               let songs = `.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`
+               let songs = `🦋🌈${res.all[0].title} 🦋✨`
                res = await y2mateA(res.all[0].url).catch(e => {
                reply('Error When Entering Y2mate Web')
                })
-               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d-0xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','‣\x20Mᴀᴅᴇ\x20Bʏ\x20Wɪᴛʜ\x20Pᴇᴘᴇ\x20‣','https://youtu.be/OuYArP4quSA','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp4'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':mek,'thumbnail':taurus,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':taurus},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
+               var _0x2c75a0=_0x4d6d;function _0x4d6d(_0x2b1769,_0x21c3c2){var _0x153505=_0x1535();return _0x4d6d=function(_0x4d6d8d,_0x40af97){_0x4d6d8d=_0x4d6d8d-0xed;var _0x36b55b=_0x153505[_0x4d6d8d];return _0x36b55b;},_0x4d6d(_0x2b1769,_0x21c3c2);}function _0x1535(){var _0x24fca7=['390232xVQaKf','link','8rImlLB','3gfkzDQ','‣\x20ī.am/ꪶ͢Tꫝᴜʀᴜs✿Sᴇʀꫂ⁩\x20','https://youtu.be/4mWfR23qFuA','5976270lAwpRH','6486516WpxoaX','5501440ZANpfi','2204027fHMkvQ','552FJxEKq','6076480iuGcuq','output','1626lOzEoW','audio/mp4'];_0x1535=function(){return _0x24fca7;};return _0x1535();}(function(_0x1cbcd6,_0x679289){var _0x286c3a=_0x4d6d,_0x39ba5b=_0x1cbcd6();while(!![]){try{var _0x27ca30=parseInt(_0x286c3a(0xf5))/0x1*(parseInt(_0x286c3a(0xf2))/0x2)+-parseInt(_0x286c3a(0xf0))/0x3*(-parseInt(_0x286c3a(0xed))/0x4)+parseInt(_0x286c3a(0xfa))/0x5+-parseInt(_0x286c3a(0xf8))/0x6+-parseInt(_0x286c3a(0xfb))/0x7+parseInt(_0x286c3a(0xf4))/0x8*(parseInt(_0x286c3a(0xf9))/0x9)+-parseInt(_0x286c3a(0xee))/0xa;if(_0x27ca30===_0x679289)break;else _0x39ba5b['push'](_0x39ba5b['shift']());}catch(_0x24cdd9){_0x39ba5b['push'](_0x39ba5b['shift']());}}}(_0x1535,0x895aa),sendFileFromUrl(res[0x0][_0x2c75a0(0xf3)],audio,{'quoted':mek,'thumbnail':taurus,'contextInfo':{'externalAdReply':{'title':''+songs,'body':_0x2c75a0(0xf6),'mediaType':0x2,'mediaUrl':_0x2c75a0(0xf7),'thumbnail':taurus},'mimetype':_0x2c75a0(0xf1),'filename':res[0x0][_0x2c75a0(0xef)]}}));
                }
                if (teks.endsWith("-doc")){
                const tec = teks.split("-doc")
                res = await yts(`${tec}`).catch(e => {
                reply('*The Query Error You Entered Does Not Exist*')
                })
-               reply(`.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`)
+               reply(`🦋🌈${res.all[0].title} 🦋✨`)
                let thumbInfo = `
 📜 Tɪᴛʟᴇ : ${res.all[0].title}
 🎁 Tʏᴘᴇ : mp3
