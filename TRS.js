@@ -291,7 +291,7 @@ module.exports = bosco = async (bosco, mek) => {
             return Math.floor(Math.random() * angka) + 1
         }
         const reply = (teks) => {
-	      bosco.sendMessage(from, teks, text, { thumbnail: taurus, sendEphemeral: true, quoted: ftroli, contextInfo: { forwardingScore: 508, isForwarded: false, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/c/919961050829'}`}},})
+	      bosco.sendMessage(from, teks, text, { thumbnail: taurus, sendEphemeral: true, quoted: ftroli, contextInfo: { forwardingScore: 508, isForwarded: false, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}},})
         }
         const sendMess = (hehe, teks) => {
            bosco.sendMessage(hehe, teks, text)
@@ -542,7 +542,7 @@ const ftrol = {
                           }
                         }
                       }
-        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `🦋 ${pushname} 🦋`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;🦋 ${pushname} 🦋,;;;\nFN:🦋 ${pushname} 🦋,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Denis\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
+        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `🦋 ${pushname} 🦋`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;🦋 ${pushname} 🦋,;;;\nFN:🦋 ${pushname} 🦋,\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Taurus\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
         }}}
        const math = (teks) => {
            return Math.floor(teks)
@@ -659,7 +659,7 @@ const ftrol = {
            if(mime.split("/")[0] === "audio"){
            mime = Mimetype.mp4Audio
 }
-           bosco.sendMessage(to, media, type, {quoted: ftroli, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/c/919961050829'}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
+           bosco.sendMessage(to, media, type, {quoted: ftroli, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
                      
            fs.unlinkSync(filename)
 });
@@ -727,7 +727,7 @@ const ftrol = {
           let authorname = bosco.contacts[from] != undefined ? bosco.contacts[from].vname || bosco.contacts[from].notify : undefined	
           if (authorname != undefined) { } else { authorname = groupName }	
           function addMetadata(packname, author) {	
-          if (!packname) packname = '!Denis'; if (!author) author = 'Ser';author = author.replace(/[^a-zA-Z0-9]/g, '');	
+          if (!packname) packname = '!TAURUS'; if (!author) author = 'SER';author = author.replace(/[^a-zA-Z0-9]/g, '');	
           let name = `${author}_${packname}`
           if (fs.existsSync(`./sticker/${name}.exif`)) return `./sticker/${name}.exif`
           const json = {	
@@ -1008,7 +1008,7 @@ ini_anu =`${fake}
 ╰❒ 
 `
 if(typemenu == 'document'){
-sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, taurus, ini_mark)
+sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, koko, ini_mark)
 } 
 if(typemenu == 'troli'){
 sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
@@ -2954,7 +2954,7 @@ case 'emoji':
 						teks += `- ${awokwkwk}\n`
 					}
 					teks += `\n*Tᴏᴛᴀʟ : ${vien.length}*\n\n_🍁_`
-					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝒕𝒂𝒖𝒓𝒖𝒔 𝒃𝒐𝒕${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/c/919961050829'}`}},quoted: ftext})
+					bosco.sendMessage(from, teks.trim(), extendedText, { caption: 'teks', "contextInfo": { text: 'teks', sendEphemeral: true, "externalAdReply": { "title": `${' '}𝒕𝒂𝒖𝒓𝒖𝒔 𝒃𝒐𝒕${''}${''}`, "body": ``, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": '', "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}},quoted: ftext})
 					break
 				case 'addimage':
 				    if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
@@ -3745,7 +3745,7 @@ if (Number(oi2) >= 50) return reply('*Most!*')
                 case 'return':
 				if (!isOwner) return 
 					return bosco.sendMessage(from, JSON.stringify(eval(body.slice(8))), text, {quoted: ftroli})
-					if (err) return bosco.sendMessage(from, `root @Denis Ser:~ ${err}`, text, { quoted: ftroli })
+					if (err) return bosco.sendMessage(from, `root @Taurus Ser:~ ${err}`, text, { quoted: ftroli })
                  break
               case 'swm':
 						if (isMedia && !mek.message.videoMessage || isQuotedImage) {
