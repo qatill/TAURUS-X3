@@ -983,7 +983,7 @@ case 'help':{
 					value : "-"
 					}
 				}
-				let content = fs.readFileSync('./taurus.mp4')
+				let content = fs.readFileSync('./taurus.jpg')
 const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync('./taurus.jpg')})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await bosco.getStatus(`${yy}`)
@@ -996,7 +996,8 @@ timestampe = speed();
 latensie = speed() - timestampe          
 anunya = process.uptime()
 ini_anu =`${fake}
-teks = `
+
+
 ╭─❒ 「 ʙᴏᴛ ɪɴғᴏ 」 
 ├‣ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ :  @${koko.split('@')[0]}
 ├‣ ᴘʀᴇғɪx :   ${prefix}
@@ -1008,8 +1009,11 @@ teks = `
 ├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
 ╰❒ 
 `
-{ 
-let content1 = fs.readFileSync('./taurus.mp4')
+if(help == 'document'){
+sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, koko, ini_mark)
+} 
+if(help == 'location'){ 
+let content1 = fs.readFileSync('./ds.jpg')
 bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
@@ -1020,7 +1024,7 @@ const taurusbutton = [
 ]
 
 const btn1 = {
-    contentText: `${teks}`,
+    contentText: allmenu(prefix, bosco1, bosco2, latensie),
     footerText: `${hehe}`,
     buttons: taurusbutton,
     headerType: 6,
@@ -1028,7 +1032,7 @@ const btn1 = {
 }
 
 bosco.sendMessage(from,  btn1, MessageType.buttonsMessage,{
-        caption: 'TAURUS ©2K21',
+        caption: '©2K22 TAURUS',
         "contextInfo": {
             text: 'hi',
             "forwardingScore": 1000000000,
