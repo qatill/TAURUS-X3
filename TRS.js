@@ -2545,7 +2545,7 @@ teks += `*Title : ${get_result[i].title}*
              bosco.sendMessage(from, data, audio, { quoted: ftroli })
              break
       case 'alive':
-              bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
+              bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
               bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
               groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
@@ -2712,7 +2712,7 @@ bosco.sendMessage(from, taurus1, MessageType.buttonsMessage, { quoted: ftroli, c
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'ᴏᴡɴᴇʀ'},type:1}]
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'© 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'© 𝐓 𝐀 𝐔 ?? 𝐔 𝐒', imageMessage: imageMsg,
               contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftroli})
               bosco.relayWAMessage(prep)
