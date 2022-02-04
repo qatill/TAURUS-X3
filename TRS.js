@@ -1027,7 +1027,7 @@ sendList(sender)
 } 
 if(typemenu == 'location'){ 
 let content1 = fs.readFileSync('./hemme.jpg')
-bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: taurus})
+bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
 const taurusbutton = [
@@ -1069,7 +1069,7 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
  listMsg = {
  buttonText: '𝐇𝐄𝐋𝐏 𝐋𝐈𝐒𝐓',
  footerText: `${setting.footertext}`,
- description: `ʜᴇʏ @${stod.split('@')[0]} 
+ description: `ʜᴇʏ @${sender.split("@")[0]}
  
 
  ‣ ᴏᴡɴᴇʀ             :  ᴍᴜʜᴀᴍᴍᴇᴅ
@@ -1102,7 +1102,7 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
                      }],
  listType: 1
 }
-bosco.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [stod]},quoted:ftoko})
+bosco.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftoko})
 break
     
     case 'mode':
@@ -2544,7 +2544,7 @@ teks += `*Title : ${get_result[i].title}*
              bosco.sendMessage(from, data, audio, { quoted: ftroli })
              break
       case 'alive':
-              bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: taurus})
+              bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
               bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
               groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
@@ -3108,7 +3108,7 @@ case 'emoji':
         groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
         totalChat = await bosco.chats.all()
-        bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
+        bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
         bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
         timestampe = speed();
         latensie = speed() - timestampe
@@ -3540,7 +3540,7 @@ catlo(txt1)
         groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
         totalChat = await bosco.chats.all()
-        bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
+        bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
         bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
         timestampe = speed();
         latensie = speed() - timestampe
