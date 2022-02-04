@@ -981,8 +981,8 @@ case 'help':{
 					value : "-"
 					}
 				}
-				let content = fs.readFileSync(`image/${thumbnail}`)
-const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
+				let content = fs.readFileSync('./taurus.jpg')
+const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync('./taurus.jpg')})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await bosco.getStatus(`${yy}`)
 koko = `${owner}@s.whatsapp.net`
@@ -1027,7 +1027,7 @@ sendList(sender)
 } 
 if(typemenu == 'location'){ 
 let content1 = fs.readFileSync('./hemme.jpg')
-bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
+bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: taurus})
 bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
 
 const taurusbutton = [
@@ -2544,7 +2544,7 @@ teks += `*Title : ${get_result[i].title}*
              bosco.sendMessage(from, data, audio, { quoted: ftroli })
              break
       case 'alive':
-              bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
+              bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: taurus})
               bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
               groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
