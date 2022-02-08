@@ -265,7 +265,7 @@ module.exports = bosco = async (bosco, mek) => {
              bosco.relayWAMessage(res)
         }
        const catlo = (teks) => {
-             res = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 70000, "message": teks, "footerText": "Made With Taurus", thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:Sendbutdocument})
+             res = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 70000, "message": teks, "footerText": "Made With Taurus", thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:ftroli})
              bosco.relayWAMessage(res)
         }
         const grupinv = (teks) => {
@@ -968,97 +968,6 @@ const ftrol = {
 			 "contacts": ini_list 
 			 }, 'contactsArrayMessage', {quoted:ftroli})
 		     break
-case 'help':{
-			try {
-				chatt = await bosco.getProfilePicture(sender)
-				} catch {
-				chatt = 'https://l.top4top.io/p_20670hd6v1.jpg'
-				}
-			let ch = await getBuffer(chatt)
-			try{
-			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits')
-			} catch {
-				hit_total = { 
-					value : "-"
-					}
-				}
-				let content = fs.readFileSync('./taurus.jpg')
-const media = await bosco.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync('./taurus.jpg')})
-let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
-let p1 = await bosco.getStatus(`${yy}`)
-koko = `${owner}@s.whatsapp.net`
-groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
-privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
-totalChat = await bosco.chats.all()   
-ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB` 
-timestampe = speed();
-latensie = speed() - timestampe          
-anunya = process.uptime()
-ini_anu =`${fake}
-
-
-╭─❒ 「 ʙᴏᴛ ɪɴғᴏ 」 
-├‣ ʙᴏᴛ ᴄʀᴇᴀᴛᴏʀ :  @${koko.split('@')[0]}
-├‣ ᴘʀᴇғɪx :   ${prefix}
-├‣ ʙᴏᴛ ᴏᴡɴᴇʀ : ᴍᴜʜᴀᴍᴍᴇᴅ
-├‣ sᴘᴇᴇᴅ :  ${latensie.toFixed(4)} sᴇᴄᴏɴᴅ
-├‣ ʀᴀᴍ ᴜsᴀɢᴇ : ${ram2} 
-├‣ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs : ${privat.length}
-├‣ ɢʀᴏᴜᴘ ᴄʜᴀᴛs   :  ${groups.length} 
-├‣ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs : ${totalChat.length}
-╰❒ 
-`
-if(typemenu == 'document'){
-sendButDoc(from, ini_anu, `ᴘʟᴇᴀsᴇ ᴅᴏɴ'ᴛ sᴘᴀᴍ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅs!\n`, sender, koko, ini_mark)
-} 
-if(typemenu == 'troli'){
-sendTroli(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'troli2'){
-sendTroli2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'catalog'){
-sendcatalog2(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'catalog2'){
-sendcatalog3(allmenu(kyun, os, prefix, wita, wit, ucapannya2, timuu, status, wa_version, mcc, mnc, os_version, device_manufacturer, device_model, bosco1 , bosco2, thisDay, ini_tanggal, totalchat, hit_today, ini_gcchat, latensii))
-} 
-if(typemenu == 'list'){
-sendList(sender)
-} 
-if(typemenu == 'location'){ 
-let content1 = fs.readFileSync('./taurus.mp4')
-bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
-bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
-
-const taurusbutton = [
-  {buttonId: '`${prefix}owner`', buttonText: {displayText: 'ᴏᴡɴᴇʀ'}, type: 1},
-  {buttonId: '`${prefix}stat`', buttonText:{displayText: 'sᴛᴀᴛɪsᴛɪᴄ'}, type: 1},
-  {buttonId: '`${prefix}help`', buttonText: {displayText: 'ʜᴇʟᴘ'}, type: 1}
-]
-
-const btn1 = {
-    contentText: allmenu(prefix, bosco1, bosco2, latensie),
-    footerText: `${hehe}`,
-    buttons: taurusbutton,
-    headerType: 6,
-    locationMessage: bosco2.message.locationMessage
-}
-
-bosco.sendMessage(from,  btn1, MessageType.buttonsMessage,{
-        caption: 'TAURUS ©2K21',
-        "contextInfo": {
-            text: 'hi',
-            "forwardingScore": 1000000000,
-            isForwarded: true,
-            sendEphemeral: true,
-            "mentionedJid" : online,
-            },
-			quoted: ftroli,sendEphemeral: true 
-			})
-}
-}
-break
 
  case 'menu':
 groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
@@ -1068,8 +977,8 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         timestampe = speed();
         latensie = speed() - timestampe         
  listMsg = {
- buttonText: '𝐇𝐄𝐋𝐏 𝐋𝐈𝐒𝐓',
- footerText: `${setting.footertext}`,
+ buttonText: '𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔 🦋',
+ footerText: `*🦋🌈 𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🐦🦋*`,
  description: `ʜᴇʏ @${sender.split("@")[0]}
  
 
@@ -1093,12 +1002,12 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
                      {
                       "title": `${setting.ownerName}⁩`,
  rows: [
-                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"`${prefix}groupmenu`"},   
-                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"`${prefix}ownermenu`"}, 
-                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"`${prefix}downloadmenu`"},  
-                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"`${prefix}editmenu`"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"`${prefix}storagemenu`"},
-                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"`${prefix}extramenu`"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"`${prefix}rules`"},                                        {title: 'AllMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Aʟʟ Mᴇɴᴜ", rowId:"`${prefix}allmenu`"},
-                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"`${prefix}owner`"},
+                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"groupmenu"},   
+                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"ownermenu"}, 
+                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"downloadmenu"},  
+                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"editmenu"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"storagemenu"},
+                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"extramenu"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"rules"},                                        {title: 'MᴀᴋᴇʀMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Mᴀᴋᴇʀ Mᴇɴᴜ", rowId:"maker"},
+                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"owner"},
                         ]
                      }],
  listType: 1
