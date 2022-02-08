@@ -292,7 +292,7 @@ module.exports = bosco = async (bosco, mek) => {
             return Math.floor(Math.random() * angka) + 1
         }
         const reply = (teks) => {
-	      bosco.sendMessage(from, teks, text, { thumbnail: taurus, sendEphemeral: true, quoted: ftroli, contextInfo: { forwardingScore: 508, isForwarded: false, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}},})
+	      bosco.sendMessage(from, teks, text, { thumbnail: taurus, sendEphemeral: true, quoted: ftroli, contextInfo: { forwardingScore: 508, isForwarded: false, "externalAdReply": { "title": `${''}*𝖙𝖆𝖚𝖗𝖚𝖘-𝖝³*${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}},})
         }
         const sendMess = (hehe, teks) => {
            bosco.sendMessage(hehe, teks, text)
@@ -575,7 +575,7 @@ const ftrol = {
 			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					bosco.sendMessage(from, result, audio, { "orderMessage": { "itemCount": 1000, "footerText": "hehe", "thumbnail": taurus, "surface": 'CATALOG'}}, {quoted: ftroli, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
+					bosco.sendMessage(from, result, audio, { quoted: catlo, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
 					}
 			}
 			for (let anjh of imagi){
@@ -660,7 +660,7 @@ const ftrol = {
            if(mime.split("/")[0] === "audio"){
            mime = Mimetype.mp4Audio
 }
-           bosco.sendMessage(to, media, type, {quoted: ftroli, "externalAdReply": { "title": `${' '}ᴛᴀᴜʀᴜs-x³${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
+           bosco.sendMessage(to, media, type, {quoted: ftroli, "externalAdReply": { "title": `${''}*𝖙𝖆𝖚𝖗𝖚𝖘-𝖝³*${''}${''}`, "body": `ɢʀᴏᴜᴘ ᴀssɪsᴛᴇɴᴛ ʙᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${'https://firebasestorage.googleapis.com/v0/b/photo-to-link.appspot.com/o/40892158?alt=media&token=3c7aaf69-f816-4b71-9393-9803853aca0d'}`, "thumbnail": taurus, "sourceUrl": `${'https://wa.me/919961050829?text=_ʜᴇʟʟᴏ%20ᴛᴀᴜʀᴜs%20ʙʀᴏ%20💜🐾_'}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
                      
            fs.unlinkSync(filename)
 });
@@ -1002,12 +1002,12 @@ groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
                      {
                       "title": `${setting.ownerName}⁩`,
  rows: [
-                {title: 'GroupMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Gʀᴏᴜᴘ Mᴇɴᴜ", rowId:"groupmenu"},   
-                {title: 'OwnerMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Oᴡɴᴇʀ Mᴇɴᴜ", rowId:"ownermenu"}, 
-                {title: 'DownloadMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Dᴏᴡɴʟᴏᴀᴅ Mᴇɴᴜ", rowId:"downloadmenu"},  
-                {title: 'Editmenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Eᴅɪᴛ Mᴇɴᴜ", rowId:"editmenu"},                                {title: 'StorageMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Sᴛᴏʀᴀɢᴇ Mᴇɴᴜ", rowId:"storagemenu"},
-                {title: 'Extramenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Exᴛʀᴀ Mᴇɴᴜ", rowId:"extramenu"},                                           {title: 'Rules', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ Rᴜʟᴇs Oғ Tʜᴇ Bᴏᴛ", rowId:"rules"},                                        {title: 'MᴀᴋᴇʀMenu', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Mᴀᴋᴇʀ Mᴇɴᴜ", rowId:"maker"},
-                {title: 'Owner', description: "Cʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ Oᴡɴᴇʀ", rowId:"owner"},
+                {title: '𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ᴍᴇɴᴜ", rowId:"groupmenu"},   
+                {title: '𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴏᴡɴᴇʀ ᴍᴇɴᴜ", rowId:"ownermenu"}, 
+                {title: '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ", rowId:"downloadmenu"},  
+                {title: '𝐄𝐃𝐈𝐓 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴇᴅɪᴛ ᴍᴇɴᴜ", rowId:"editmenu"},                                {title: '𝐒𝐓𝐎𝐑𝐀𝐆𝐄 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ sᴛᴏʀᴀɢᴇ ᴍᴇɴᴜ", rowId:"storagemenu"},
+                {title: '𝐄𝐗𝐓𝐑𝐀 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴇxᴛʀᴀ ᴍᴇɴᴜ", rowId:"extramenu"},                                           {title: '𝐑𝐔𝐋𝐄𝐒', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴛʜᴇ ʀᴜʟᴇs ᴏғ ᴛʜᴇ ʙᴏᴛ", rowId:"rules"},                                        {title: '𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴍᴀᴋᴇʀ ᴍᴇɴᴜ", rowId:"maker"},
+                {title: '𝐎𝐖𝐍𝐄𝐑', description: "ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ sᴇᴇ ᴏᴡɴᴇʀ", rowId:"owner"},
                         ]
                      }],
  listType: 1
@@ -1028,241 +1028,283 @@ break
 case 'taurusgroup':
      function _0x4663(){var _0x2fc8bc=['61360RbdMuw','1938303OzLjeN','659960nzjTUM','404766EJGGBI','7WhscAJ','997400vvejgD','1297674CcBmhI','610998dTuyrA','5IPhDWS'];_0x4663=function(){return _0x2fc8bc;};return _0x4663();}function _0x1231(_0x40cb45,_0x55ff98){var _0x4663dc=_0x4663();return _0x1231=function(_0x1231ee,_0x440ba1){_0x1231ee=_0x1231ee-0x166;var _0x2eb6a7=_0x4663dc[_0x1231ee];return _0x2eb6a7;},_0x1231(_0x40cb45,_0x55ff98);}(function(_0x4d6264,_0xc43f28){var _0x4f3c9d=_0x1231,_0xf81e96=_0x4d6264();while(!![]){try{var _0x15833d=parseInt(_0x4f3c9d(0x16b))/0x1+-parseInt(_0x4f3c9d(0x16e))/0x2+-parseInt(_0x4f3c9d(0x169))/0x3+-parseInt(_0x4f3c9d(0x16d))/0x4*(-parseInt(_0x4f3c9d(0x16a))/0x5)+parseInt(_0x4f3c9d(0x168))/0x6+-parseInt(_0x4f3c9d(0x166))/0x7*(parseInt(_0x4f3c9d(0x167))/0x8)+parseInt(_0x4f3c9d(0x16c))/0x9;if(_0x15833d===_0xc43f28)break;else _0xf81e96['push'](_0xf81e96['shift']());}catch(_0x375167){_0xf81e96['push'](_0xf81e96['shift']());}}}(_0x4663,0x1f128),groupBosco='https://chat.whatsapp.com/BzhyWkAEU0t8oVl3s8p94m',catlo(groupBosco));
     break
-    case 'ownermenu':
+case 'ownermenu':
     owner1 =`
-𝑶 𝑾 𝑵 𝑬 𝑹 - 𝑴 𝑬 𝑵 𝑼 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+       𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}sᴇᴛʙɢᴍᴘɪᴄ
 
-${prefix}setbgmpic
+┣‣ ${prefix}sᴇᴛᴛʜᴜᴍʙ
 
-${prefix}setthumb
+┣‣ ${prefix}ᴄʟᴇᴀʀᴀʟʟ
 
-${prefix}clearall
+┣‣ ${prefix}ᴛᴏʙᴄ
 
-${prefix}tobc
+┣‣ ${prefix}ʙᴄ
 
-${prefix}bc
+┣‣ ${prefix}ɢᴇᴛǫᴜᴏᴛᴇᴅ
 
-${prefix}getquoted
+┣‣ ${prefix}ʀᴇsᴛᴀʀᴛ
 
-${prefix}restart
+┣‣ ${prefix}ᴛᴇʀᴍ
 
-${prefix}term
+┣‣ ${prefix}ʙʟᴏᴄᴋ
 
-${prefix}block
+┣‣ ${prefix}ᴜɴʙʟᴏᴄᴋ
 
-${prefix}unblock
+┣‣ ${prefix}ʟᴇᴀᴠᴇᴀʟʟ
 
-${prefix}leaveall
+┣‣ ${prefix}ᴀᴅᴅᴄᴍᴅ
 
-${prefix}addcmd
+┣‣ ${prefix}ᴅᴇʟᴄᴍᴅ
 
-${prefix}delcmd
+┣‣ ${prefix}ᴊᴀᴅɪʙᴏᴛ
 
-${prefix}jadibot
+┣‣ ${prefix}ʟɪsᴛᴊᴀᴅɪʙᴏᴛ
 
-${prefix}listjadibot
+┣‣ ${prefix}sᴛᴏᴘᴊᴀᴅɪʙᴏᴛ
 
-${prefix}stopjadibot
+┣‣ ${prefix}ᴇxɪғ
 
-${prefix}exif
+┣‣ ${prefix}ᴊᴏɪɴ
 
-${prefix}join
+┣‣ ${prefix}ʀᴇᴛᴜʀɴ
 
-${prefix}return
+┣‣ ${prefix}ᴘᴜʙʟɪᴄ
 
-${prefix}public
+┣‣ ${prefix}sᴇʟғ
 
-${prefix}self
+┣‣ ${prefix}ʀᴇᴀᴅᴀʟʟ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-${prefix}readall
-`
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(owner1)
    break
    case 'groupmenu':
       group1 = `
-𝑮 𝑹 𝑶 𝑼 𝑷 - 𝑴 𝑬 𝑵 𝑼 
- 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+       𝐆𝐑𝐎𝐔𝐏 𝐌𝐄𝐍𝐔
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-${prefix}add
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}ᴀᴅᴅ
 
-${prefix}kick
+┣‣ ${prefix}ᴋɪᴄᴋ
 
-${prefix}promote
+┣‣ ${prefix}ᴘʀᴏᴍᴏᴛᴇ
 
-${prefix}demote
+┣‣ ${prefix}ᴅᴇᴍᴏᴛᴇ
 
-${prefix}disappear
+┣‣ ${prefix}ᴅɪsᴀᴘᴘᴇᴀʀ
 
-${prefix}group
+┣‣ ${prefix}ɢʀᴏᴜᴘ
 
-${prefix}antilink
+┣‣ ${prefix}ᴀɴᴛɪʟɪɴᴋ
 
-${prefix}totag
+┣‣ ${prefix}ᴛᴏᴛᴀɢ
 
-${prefix}hidetag
+┣‣ ${prefix}ʜɪᴅᴇᴛᴀɢ
 
-${prefix}translate
+┣‣ ${prefix}ᴛʀᴀɴsʟᴀᴛᴇ
 
-${prefix}getdeskgc
+┣‣ ${prefix}ɢᴇᴛᴅᴇsᴋɢᴄ
 
-${prefix}getbio
+┣‣ ${prefix}ɢᴇᴛʙɪᴏ
 
-${prefix}getpp
+┣‣ ${prefix}ɢᴇᴛᴘᴘ
 
-${prefix}getname
-`
+┣‣ ${prefix}ɢᴇᴛɴᴀᴍᴇ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(group1)
     break
     case 'editmenu':
      edit1 = `
-𝑬 𝑫 𝑰 𝑻 - 𝑴 𝑬 𝑵 𝑼 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+         𝐄𝐃𝐈𝐓 𝐌𝐄𝐍𝐔 
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣${prefix}sᴇᴄᴠɴ
 
-${prefix}secvn
+┣‣ ${prefix}sᴇᴄᴠɪᴅᴇᴏ
 
-${prefix}secvideo
+┣‣ ${prefix}ᴛᴏᴍᴘ3
 
-${prefix}tomp3
+┣‣ ${prefix}ᴛᴏᴍᴘ4
 
-${prefix}tomp4
+┣‣ ${prefix}ᴛᴏɪᴍɢ
 
-${prefix}toimg
+┣‣ ${prefix}ʙᴀʙʏ
 
-${prefix}baby
+┣‣ ${prefix}ʙᴀss
 
-${prefix}bass
+┣‣ ${prefix}ʀᴇᴠᴇʀsᴇ
 
-${prefix}reverse
+┣‣ ${prefix}sʟᴏᴡ
 
-${prefix}slow
+┣‣ ${prefix}sǫᴜɪʀʀᴇʟ
 
-${prefix}squirrel
+┣‣ ${prefix}ʙʟᴜʙ
 
-${prefix}blub
+┣‣ ${prefix}ғᴀᴛ
 
-${prefix}fat
+┣‣ ${prefix}ɪᴍᴀɢᴇᴛᴏᴜʀʟ
 
-${prefix}imagetourl
+┣‣ ${prefix}ᴍᴇ
 
-${prefix}voice
+┣‣ ${prefix}ɴɪɢʜᴛᴄᴏʀᴇ
 
-${prefix}nightcore
+┣‣ ${prefix}ᴄᴍ
 
-${prefix}cm
+┣‣ ${prefix}ғᴀsᴛ
 
-${prefix}fast
+┣‣ ${prefix}ɢᴇᴍᴇs
 
-${prefix}gemes
+┣‣ ${prefix}sʟᴏᴡᴠɪᴅ
 
-${prefix}slowvid
-
-${prefix}fastvid
+┣‣ ${prefix}ғᴀsᴛᴠɪᴅ
  
-${prefix}reversevid
+┣‣ ${prefix}ʀᴇᴠᴇʀsᴇᴠɪᴅ
 
-${prefix}tts
-`
+┣‣ ${prefix}ᴛᴛs ᴇɴ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(edit1)
       break
       case 'storagemenu':
         storage1 = `
-𝑺 𝑻 𝑶 𝑹 𝑨 𝑮 𝑬 - 𝑴 𝑬 𝑵 𝑼 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     𝐒𝐓𝐎𝐑𝐀𝐆𝐄 𝐌𝐄𝐍𝐔 
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}ᴀᴅᴅᴠɴ
 
-${prefix}addvn
+┣‣ ${prefix}ᴀᴅᴅᴠɪᴅᴇᴏ
 
-${prefix}addvideo
+┣‣ ${prefix}ᴀᴅᴅᴠɪᴅᴇᴏ
 
-${prefix}addimage
+┣‣ ${prefix}ᴀᴅᴅsᴛɪᴄᴋᴇʀ
 
-${prefix}addsticker
+┣‣ ${prefix}ʟɪsᴛᴠɴ
 
-${prefix}listvn
+┣‣ ${prefix}ʟɪsᴛᴠɪᴅᴇᴏ
 
-${prefix}listvideo
+┣‣ ${prefix}ʟɪsᴛɪᴍᴀɢᴇ
 
-${prefix}listimage
+┣‣ ${prefix}ʟɪsᴛsᴛɪᴄᴋᴇʀ
 
-${prefix}liststicker
+┣‣ ${prefix}ᴅᴇʟᴠɴ
 
-${prefix}delvn
+┣‣ ${prefix}ᴅᴇʟᴠɪᴅᴇᴏ
 
-${prefix}delvideo
+┣‣ ${prefix}ᴅᴇʟɪᴍᴀɢᴇ
 
-${prefix}delimage
+┣‣ ${prefix}ᴅᴇʟsᴛɪᴄᴋᴇʀ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-${prefix}delsticker
-
-`
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(storage1)
       break
       case 'extramenu':
       extra1 = `
-𝑬 𝑿 𝑻 𝑹 𝑨 - 𝑴 𝑬 𝑵 𝑼 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+       𝐄𝐗𝐓𝐑𝐀 𝐌𝐄𝐍𝐔
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}ᴄʜᴀᴛ
 
-${prefix}chat
+┣‣ ${prefix}ғɪᴛɴᴀʜᴘᴄ
 
-${prefix}fitnahpc
+┣‣ ${prefix}ᴄᴏɴᴛᴀᴄᴛ
 
-${prefix}contact
+┣‣ ${prefix}ғᴏʀᴡᴀʀᴅ
 
-${prefix}forward
+┣‣ ${prefix}ғᴏʀᴡᴀʀᴅᴠɪᴅᴇᴏ
 
-${prefix}forwardvideo
+┣‣ ${prefix}ғᴏʀᴡᴀʀᴅᴀᴜᴅɪᴏ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-${prefix}forwardaudio
-`
- catlo(extra1)
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
+catlo(extra1)
      break
      case 'downloadmenu':
      download1 = `
-𝑫 𝑶 𝑾 𝑵 𝑳 𝑶 𝑨 𝑫 - 𝑴 𝑬 𝑵 𝑼 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+    𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐌𝐄𝐍𝐔
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-${prefix}play
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}ᴘʟᴀʏ
 
-${prefix}ytmp3
+┣‣ ${prefix}ʏᴛᴍᴘ3
 
-${prefix}ytmp4
+┣‣ ${prefix}ʏᴛᴍᴘ4
 
-${prefix}igdl
+┣‣ ${prefix}ɪɢᴅʟ
 
-${prefix}ytsearch
+┣‣ ${prefix}ʏᴛsᴇᴀʀᴄʜ
 
-${prefix}igstory
+┣‣ ${prefix}ɪɢsᴛᴏʀʏ
 
-${prefix}scplay
+┣‣ ${prefix}sᴄᴘʟᴀʏ
 
-${prefix}pinterest
+┣‣ ${prefix}ᴘɪɴᴛᴇʀᴇsᴛ
 
-${prefix}telesticker
+┣‣ ${prefix}ᴛᴇʟᴇsᴛɪᴄᴋᴇʀ
 
-${prefix}githubsearch
+┣‣ ${prefix}ɢɪᴛʜᴜʙsᴇᴀʀᴄʜ
 
-${prefix}googleimage
+┣‣ ${prefix}ɢᴏᴏɢʟᴇɪᴍᴀɢᴇ
 
-${prefix}ytdesk
+┣‣ ${prefix}ʏᴛᴅᴇsᴋ
 
-${prefix}lyric
+┣‣ ${prefix}ʟʏʀɪᴄ
 
-${prefix}playstore
+┣‣ ${prefix}ᴘʟᴀʏsᴛᴏʀᴇ
 
-${prefix}mediafire
+┣‣ ${prefix}ᴍᴇᴅɪᴀғɪʀᴇ
 
-${prefix}fb
+┣‣ ${prefix}ғʙ
 
-${prefix}tiktoknown
+┣‣ ${prefix}ᴛɪᴋᴛᴏᴋɴᴏᴡɴ
 
-${prefix}tiktokaudio
+┣‣ ${prefix}ᴛɪᴋᴛᴏᴋᴀᴜᴅɪᴏ
 
-${prefix}tiktokdl
+┣‣ ${prefix}ᴛɪᴋᴛᴏᴋᴅʟ
 
-${prefix}twitter
+┣‣ ${prefix}ᴛᴡɪᴛᴛᴇʀ
 
-${prefix}tinyurl
+┣‣ ${prefix}ᴛɪɴʏᴜʀʟ
 
-${prefix}google
+┣‣ ${prefix}ɢᴏᴏɢʟᴇ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 ` 
 catlo(download1)
     break
@@ -1270,32 +1312,43 @@ catlo(download1)
     
    case 'rules':
            rules1 = `
------[ 𝑹 𝑼 𝑳 𝑬 𝑺 ]-----
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+             𝐑𝐔𝐋𝐄𝐒
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-1. 𝙳𝙾𝙽𝚃 𝙲𝙰𝙻𝙻 𝙱𝙾𝚃
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ᴅᴏɴ'ᴛ sᴘᴀᴍ ʙᴏᴛ
 
-2. 𝙳𝙾𝙽𝚃 𝚂𝙿𝙰𝙼 𝙱𝙾𝚃
+┣‣ ᴅᴏɴ'ᴛ ᴄᴀʟʟ ʙᴏᴛ
 
-3. 𝙳𝙾𝙽𝚃 𝙿𝙼 𝙱𝙾𝚃
+┣‣ ᴅᴏɴ'ᴛ ᴍɪss ᴜsᴇ ʙᴏᴛ
 
-4. 𝙳𝙾𝙽𝚃 𝙼𝙸𝚂𝚄𝚂𝙴 𝚃𝙷𝙴 𝙱𝙾𝚃
+┣‣ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴄᴏɴᴛᴀᴄᴛ
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-5. 𝙰𝙽𝚈 𝙿𝚁𝙾𝙱𝙻𝙴𝙼 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚄𝚁 𝙾𝚆𝙽𝙴𝚁
-
-*wa.me/${owner}*`
-       osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": taurus, "surface": 'CATALOG'}}, {quoted: ftroli})
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+`
+       osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": denis, "surface": 'CATALOG'}}, {quoted: mek})
             bosco.relayWAMessage(osk)
        break
    case 'credits':
       credits1= `
-‣ 𝐓𝐀𝐔𝐑𝐔𝐒 𝐁𝐎𝐓 𝐂𝐑𝐄𝐃𝐈𝐓𝐒 ‣ 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     𝐓𝐀𝐔𝐑𝐔𝐒 𝐂𝐑𝐄𝐃𝐈𝐓𝐒
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ wa.me/918157849715
 
-‣ wa.me/918157849715
+┣‣ wa.me/919961050829
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-‣ wa.me/919961050829
-
-`
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+     🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(credits1)
       break
 //------------------< Sticker Cmd >-------------------
@@ -1666,7 +1719,7 @@ break
 					bosco.sendMessage(from, hah, video, {mimetype: 'video/mp4', duration: cokmatane, quoted: ftroli})
 					fs.unlinkSync(media)
 				    break
-               case 'voice':
+               case 'me':
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
@@ -1683,8 +1736,8 @@ break
                     encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
                     anu = args.join(' ').split('|')
-                    satu = anu[0] !== '' ? anu[0] : `Taurus`
-                    dua = typeof anu[1] !== 'undefined' ? anu[1] : `BOT`
+                    satu = anu[0] !== '' ? anu[0] : `Tꫝᴜʀᴜs`
+                    dua = typeof anu[1] !== 'undefined' ? anu[1] : `Sᴇʀ`
                     require('./lib/fetch.js').createExif(satu, dua)
 			        require('./lib/fetch.js').modStick(media, bosco, mek, from)
 			        break
@@ -1703,7 +1756,7 @@ break
 		            })
 		            break
 		    case 'slowvid':
-		            if (!isQuotedVideo) return fakeitem('Reply videonya!')
+		            if (!isQuotedVideo) return fakeitem('Reply video!')
 		            fakegroup(mess.wait)
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
@@ -2151,7 +2204,7 @@ break
          case 'pin':
               if (args.length < 1) return reply(`${prefix}Taurus Ser`)
               data = await fetchJson(`https://lolhuman.herokuapp.com/api/pinterest?apikey=${lolkey}&query=${q}`)
-              buttons = [{buttonId: `${prefix + command} ${q}`,buttonText:{displayText: `➡️Next`},type:1}]
+              buttons = [{buttonId: `${prefix + command} ${q}`,buttonText:{displayText: `ɴᴇxᴛ`},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.result))
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Hello Sis Can i help u..', imageMessage: imageMsg,
@@ -2989,7 +3042,7 @@ case 'emoji':
               reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
               } else if (somtoyy == '🔔 : 🔔 : 🔔') {
               reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
-              } else if (somtoyy == '🍐 : 🍐 : 🍐') {
+              } else if (somtoyy == '🍐 : ?? : 🍐') {
               reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
               } else if (somtoyy == '🍇 : 🍇 : 🍇') {
               reply(`[  🎰 | *SLOT* ]\n---------------------\n${somtoy}\n${somtoyy} <======\n${somtoyyy}\n---------------------\n[  *YOU WIN*  ]`)
@@ -3061,223 +3114,235 @@ sᴏᴍᴇ ᴍᴀᴋᴇʀ ᴡɪʟʟ ɴᴏᴛ ᴡᴏʀᴋ
  {buttonId:`${prefix}txtit`,buttonText:{displayText:'𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔 1'},type:1},
  {buttonId:`${prefix}makermenu`,buttonText:{displayText:'𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔 2'},type:1}
 ]
- makermessage = { contentText: ` `, footerText: `${hehe}`, buttons: makerbutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
+ makermessage = { contentText: `${hehe}`, footerText: `🦋🌈 *𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔* 🦋✨`, buttons: makerbutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
  bosco.sendMessage(from, makermessage, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [sender]},})
 break
 case 'makermenu':
       maker1 = `
-‣ 𝑴𝑨𝑲𝑬𝑹 - 𝑴 𝑬 𝑵 𝑼 ‣ 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+      𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}sʜᴀᴅᴏᴡ
 
-‣ ${prefix}shadow
+ ┣‣ ${prefix}ᴄᴜᴘ
 
-‣ ${prefix}cup
+ ┣‣ ${prefix}ᴄᴜᴘ1
 
-‣ ${prefix}cup1
+ ┣‣ ${prefix}ʀᴏᴍᴀɴᴄᴇ
 
-‣ ${prefix}romance
+ ┣‣ ${prefix}sᴍᴏᴋᴇ
 
-‣ ${prefix}smoke
+ ┣‣ ${prefix}ʙᴜʀɴᴘᴀᴘᴇʀ
 
-‣ ${prefix}burnpaper
+ ┣‣ ${prefix}ʟᴏᴠᴇᴍᴇssᴀɢᴇ
 
-‣ ${prefix}lovemessage
+ ┣‣ ${prefix}ᴜɴᴅᴇʀɢʀᴀss
 
-‣ ${prefix}undergrass
+ ┣‣ ${prefix}ʟᴏᴠᴇ
 
-‣ ${prefix}love
+ ┣‣ ${prefix}ᴄᴏғғᴇ
 
-‣ ${prefix}coffe
+ ┣‣ ${prefix}ᴡᴏᴏᴅʜᴇᴀʀᴛ
 
-‣ ${prefix}woodheart
+ ┣‣ ${prefix}ᴡᴏᴏᴅᴇɴʙᴏᴀʀᴅ
 
-‣ ${prefix}woodenboard
+ ┣‣ ${prefix}sᴜᴍᴍᴇʀ3ᴅ
 
-‣ ${prefix}summer3d
+ ┣‣ ${prefix}ᴡᴏʟғᴍᴇᴛᴀʟ
 
-‣ ${prefix}wolfmetal
+ ┣‣ ${prefix}ɴᴀᴛᴜʀᴇ3ᴅ
 
-‣ ${prefix}nature3d
+ ┣‣ ${prefix}ᴜɴᴅᴇʀᴡᴀᴛᴇʀ
 
-‣ ${prefix}underwater
+ ┣‣ ${prefix}ɢᴏʟᴅᴇʀʀᴏsᴇ
 
-‣ ${prefix}golderrose
+ ┣‣ ${prefix}sᴜᴍᴍᴇʀɴᴀᴛᴜʀᴇ
 
-‣ ${prefix}summernature
+ ┣‣ ${prefix}ʟᴇᴛᴛᴇʀʟᴇᴀᴠᴇs
 
-‣ ${prefix}letterleaves
+ ┣‣ ${prefix}ɢʟᴏᴡɪɴɢɴᴇᴏɴ
 
-‣ ${prefix}glowingneon
+ ┣‣ ${prefix}ғᴀʟʟʟᴇᴀᴠᴇs
 
-‣ ${prefix}fallleaves
+ ┣‣ ${prefix}ғʟᴀᴍᴍɪɴɢ
 
-‣ ${prefix}flamming
+ ┣‣ ${prefix}ʜᴀʀʀʏᴘᴏᴛᴛᴇʀ
 
-‣ ${prefix}harrypotter
+ ┣‣ ${prefix}ᴄᴀʀᴠᴇᴅᴡᴏᴏᴅ
 
-‣ ${prefix}carvedwood
+ ┣‣ ${prefix}ᴛɪᴋᴛᴏᴋ
 
-‣ ${prefix}tiktok
+ ┣‣ ${prefix}ᴀʀᴄᴀᴅᴇ8ʙɪᴛ
 
-‣ ${prefix}arcade8bit
+ ┣‣ ${prefix}ɢᴀʟᴀxʏᴡᴀʟʟᴘᴀᴘᴇʀ
 
-‣ ${prefix}galaxywallpaper
+ ┣‣ ${prefix}ʟɪɢʜᴛᴛᴇxᴛ
 
-‣ ${prefix}lighttext
+ ┣‣ ${prefix}ʙᴇᴀᴜᴛɪғᴜʟғʟᴏᴡᴇʀ
 
-‣ ${prefix}beautifulflower
+ ┣‣ ${prefix}ᴘᴜᴘᴘʏᴄᴜᴛᴇ
 
-‣ ${prefix}puppycute
+ ┣‣ ${prefix}ʀᴏʏᴀʟᴛᴇxᴛ
 
-‣ ${prefix}royaltext
+ ┣‣ ${prefix}ʜᴇᴀʀᴛsʜᴀᴘᴇᴅ
+ 
+ ┣‣ ${prefix}ʙɪʀᴛʜᴅᴀʏᴄᴀᴋᴇ
 
-‣ ${prefix}heartshaped
+ ┣‣ ${prefix}ɢʟᴏssʏᴄʜʀᴏᴍᴇ
 
-‣ ${prefix}birthdaycake
+ ┣‣ ${prefix}ɢʀᴇᴇɴʙᴜsʜ
 
-‣ ${prefix}glossychrome
+ ┣‣ ${prefix}ᴍᴇᴛᴀʟʟᴏɢᴏ
 
-‣ ${prefix}greenbush
+ ┣‣ ${prefix}ɴᴏᴇʟᴛᴇxᴛ
 
-‣ ${prefix}metallogo
+ ┣‣ ${prefix}ɢʟɪᴛᴛᴇʀɢᴏʟᴅ
 
-‣ ${prefix}noeltext
+ ┣‣ ${prefix}ᴛᴇxᴛᴄᴀᴋᴇ
 
-‣ ${prefix}glittergold
+ ┣‣ ${prefix}sᴛᴀʀᴛsɴɪɢʜᴛ
 
-‣ ${prefix}textcake
+ ┣‣ ${prefix}ᴡᴏᴏᴅᴇɴ3ᴅ
 
-‣ ${prefix}starsnight
+ ┣‣ ${prefix}ᴛᴇxᴛʙʏɴᴀᴍᴇ
 
-‣ ${prefix}wooden3d
+ ┣‣ ${prefix}ᴡʀɪᴛᴇɢᴀʟᴀᴄʏ
 
-‣ ${prefix}textbyname
+ ┣‣ ${prefix}ɢᴀʟᴀxʏʙᴀᴛ
 
-‣ ${prefix}writegalacy
+ ┣‣ ${prefix}sɴᴏᴡ3ᴅ
 
-‣ ${prefix}galaxybat
+ ┣‣ ${prefix}ʙɪʀᴛʜᴅᴀʏᴅᴀʏ
 
-‣ ${prefix}snow3d
+ ┣‣ ${prefix}ɢᴏʟᴅᴘʟᴀʏʙᴜᴛᴛᴏɴ
 
-‣ ${prefix}birthdayday
+ ┣‣ ${prefix}sɪʟᴠᴇʀᴘʟᴀʏʙᴜᴛᴛᴏɴ
 
-‣ ${prefix}goldplaybutton
+ ┣‣ ${prefix}ғʀᴇᴇғɪʀᴇ
+ ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-‣ ${prefix}silverplaybutton
-
-‣ ${prefix}freefire
-
-ᴍᴀᴋᴇʀ ᴍᴇɴᴜ ᴀᴅᴅᴇᴅ ʙʏ ᴍᴜʜᴀᴍᴍᴇᴅ
-`
+ ┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+      🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+ ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(maker1)
       break
       case 'txtit':
       txt1 = `
-★ 𝑴𝑨𝑲𝑬𝑹 - 𝑴 𝑬 𝑵 𝑼 - 𝑻𝑾𝑶‣ 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+   𝐌𝐀𝐊𝐄𝐑 𝐌𝐄𝐍𝐔 𝐓𝐖𝐎
+┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
+┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+┣‣ ${prefix}ʙʟᴀᴄᴋᴘɪɴᴋ
 
-‣ ${prefix}blackpink
+ ┣‣ ${prefix}ɴᴇᴏɴ
 
-‣ ${prefix}neon
+ ┣‣ ${prefix}ɢʀᴇᴇɴɴᴇᴏɴ
 
-‣ ${prefix}greenneon
+ ┣‣ ${prefix}ᴀᴅᴠᴀɴᴄᴇɢʟᴏᴡ
 
-‣ ${prefix}advanceglow
+ ┣‣ ${prefix}ʙᴀᴛᴛʟᴇғɪᴇʟᴅ4
 
-‣ ${prefix}battlefield4
+ ┣‣ ${prefix}ᴘᴜʙɢ
 
-‣ ${prefix}pubg
+ ┣‣ ${prefix}ᴡᴇᴛɢʟᴀss
 
-‣ ${prefix}wetglass
+ ┣‣ ${prefix}ᴍᴜʟᴛɪᴄᴏʟᴏʀ3ᴅ
 
-‣ ${prefix}multicolor3d
+ ┣‣ ${prefix}ᴡᴀᴛᴇʀᴄᴏʟᴏʀ
 
-‣ ${prefix}watercolor
+ ┣‣ ${prefix}ʟᴜxᴜʀʏɢᴏʟᴅ
 
-‣ ${prefix}luxurygold
+ ┣‣ ${prefix}ɢᴀʟᴀxʏsᴛʏʟᴇ
 
-‣ ${prefix}galaxystyle
+ ┣‣ ${prefix}ʜᴏʟᴏɢʀᴀᴍ3ᴅ
 
-‣ ${prefix}hologram3d
+ ┣‣ ${prefix}ɢʀᴇᴇɴɴᴇᴏɴ
 
-‣ ${prefix}greenneon
+ ┣‣ ${prefix}ғᴜᴛᴜʀᴇɴᴇᴏɴ
 
-‣ ${prefix}futureneon
+ ┣‣ ${prefix}sᴀɴᴅᴡʀɪᴛɪɴɢ
 
-‣ ${prefix}sandwriting
+ ┣‣ ${prefix}sᴀɴᴅsᴜᴍᴍᴇʀ
 
-‣ ${prefix}sandsummer
+ ┣‣ ${prefix}sᴀɴᴅᴇɴɢʀᴀᴠᴇᴅ
 
-‣ ${prefix}sandengraved
+ ┣‣ ${prefix}ᴍᴇᴛᴀʟᴅᴀʀᴋ
 
-‣ ${prefix}metaldark
+ ┣‣ ${prefix}ɴᴇᴏɴʟɪɢʜᴛ
 
-‣ ${prefix}neonlight
+ ┣‣ ${prefix}ʜᴏʟᴏɢʀᴀᴘʜɪᴄ
 
-‣ ${prefix}holographic
+ ┣‣ ${prefix}ᴛᴇxᴛ1917
 
-‣ ${prefix}text1917
+ ┣‣ ${prefix}ᴍɪɴɪᴏɴ
 
-‣ ${prefix}minion
+ ┣‣ ${prefix}ᴅᴇʟᴜxᴇsɪʟᴠᴇʀ
 
-‣ ${prefix}deluxesilver
+ ┣‣ ${prefix}ɴᴇᴡʏᴇᴀʀᴄᴀʀᴅ
 
-‣ ${prefix}newyearcard
+ ┣‣ ${prefix}ʙʟᴏᴏᴅғʀᴏsᴛᴇᴅ
 
-‣ ${prefix}bloodfrosted
+ ┣‣ ${prefix}ʜᴀʟʟᴏᴡᴇᴇɴ
 
-‣ ${prefix}halloween
+ ┣‣ ${prefix}ᴊᴏᴋᴇʀʟᴏɢᴏ
 
-‣ ${prefix}jokerlogo
+ ┣‣ ${prefix}ғɪʀᴇᴡᴏʀᴋsᴘᴀʀᴋʟᴇ
 
-‣ ${prefix}fireworksparkle
+ ┣‣ ${prefix}ɴᴀᴛᴜʀᴇʟᴇᴀᴠᴇs
 
-‣ ${prefix}natureleaves
+ ┣‣ ${prefix}ʙᴏᴋᴇʜ
 
-‣ ${prefix}bokeh
+ ┣‣ ${prefix}ᴛᴏxɪᴄ
 
-‣ ${prefix}toxic
+ ┣‣ ${prefix}sᴛʀᴀᴡʙᴇʀʀʏ
 
-‣ ${prefix}strawberry
+ ┣‣ ${prefix}ʙᴏx3ᴅ
 
-‣ ${prefix}box3d
+ ┣‣ ${prefix}ʀᴏᴀᴅᴡᴀʀɴɪɴɢ
 
-‣ ${prefix}roadwarning
+ ┣‣ ${prefix}ʙʀᴇᴀᴋᴡᴀʟʟ
 
-‣ ${prefix}breakwall
+ ┣‣ ${prefix}ɪᴄᴇᴄᴏʟᴅ
 
-‣ ${prefix}icecold
+ ┣‣ ${prefix}ʟᴜxᴜʀʏ
 
-‣ ${prefix}luxury
+ ┣‣ ${prefix}ᴄʟᴏᴜᴅ
 
-‣ ${prefix}cloud
+ ┣‣ ${prefix}sᴜᴍᴍᴇʀsᴀɴᴅ
 
-‣ ${prefix}summersand
+ ┣‣ ${prefix}ʜᴏʀʀᴏʀʙʟᴏᴏᴅ
 
-‣ ${prefix}horrorblood
+ ┣‣ ${prefix}ᴛʜᴜɴᴅᴇʀ
 
-‣ ${prefix}thunder
+ ┣‣ ${prefix}ᴘᴏʀɴʜᴜʙ
 
-‣ ${prefix}pornhub
+ ┣‣ ${prefix}ɢʟɪᴛᴄʜ
 
-‣ ${prefix}glitch
+ ┣‣ ${prefix}ᴀᴠᴇɴɢᴇʀ
 
-‣ ${prefix}avenger
+ ┣‣ ${prefix}sᴘᴀᴄᴇ
 
-‣ ${prefix}space
+ ┣‣ ${prefix}ɴɪɴᴊᴀʟᴏɢᴏ
 
-‣ ${prefix}ninjalogo
+ ┣‣ ${prefix}ᴍᴀʀᴠᴇʟsᴛᴜᴅɪᴏ
 
-‣ ${prefix}marvelstudio
+ ┣‣ ${prefix}ʟɪᴏɴʟᴏɢᴏ
 
-‣ ${prefix}lionlogo
+ ┣‣ ${prefix}ᴡᴏʟғʟᴏɢᴏ
 
-‣ ${prefix}wolflogo
+ ┣‣ ${prefix}sᴛᴇᴇʟ3ᴅ
+ 
+ ┣‣ ${prefix}ᴡᴀʟʟɢʀᴀᴠɪᴛʏ
+ ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 
-‣ ${prefix}steel3d
-
-‣ ${prefix}wallgravity
-`
+ ┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
+      🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
+ ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
+` 
 catlo(txt1)
       break
           case 'get':
@@ -3594,7 +3659,7 @@ if (Number(oi2) >= 50) return reply('*Most!*')
                 reply('*The bot has been successfully muted in this chat*')
                 break
      case 'tts':
-					if (args.length < 1) return bosco.sendMessage(from, `Kode bahasanya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: ftroli })
+					if (args.length < 1) return bosco.sendMessage(from, `ᴡʜᴇʀᴇ ɪs ᴛʜᴇ ʟᴀɴɢᴜᴀɢᴇ ᴄᴏᴅᴇ ᴇxᴀᴍᴘʟᴇ : ${prefix}tts ᴛʏᴘᴇ ʏᴏᴜʀ ʟᴀɴɢᴜᴀɢᴇ ʜᴇʀᴇ ʟɪᴋᴇ ᴛᴛs ᴇɴ ғᴏʀ ᴇɴɢʟɪsʜ`, text, { quoted: ftroli })
 				   const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return bosco.sendMessage(from, `Teksnya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: ftroli })
 					var bby = body.slice(8)
