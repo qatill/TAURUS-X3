@@ -283,40 +283,7 @@ module.exports = bosco = async (bosco, mek) => {
 		      }
 		const taurus = await getBuffer(pporang)
 		
-		        const ftaurus = {}
-        
-        ftaurus.contextInfo = {
-                 forwardingScore: 999, 
-                 isForwarded: true 
-              } 
-
-        
-        if(message.reply_message.audio){ 
-            options.duration = 999999 
-
-        ftaurus.ptt = true 
-        }
-        ftaurus.linkPreview = {
-               head: "🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋",
-               body: "ɢʀᴏᴜᴘ ᴀssɪsᴛᴀɴᴛ ʙᴏᴛ",
-               mediaType: 2, //3 for video
-               thumbnail: buff9.buffer,
-               sourceUrl: "http://wa.me/919961050829?text=_Hello%20Taurus%20Bro%20🐾💜_",
-                }
-        ftaurus.quoted = {
-            key: {
-                fromMe: false,
-                participant: "0@s.whatsapp.net",
-                remoteJid: "status@broadcast"
-            },
-            message: {
-                "imageMessage": {
-                    "jpegThumbnail": buff1.buffer,
-                    "caption": "🦋 𝗧𝗔𝗨𝗥𝗨𝗦 𝗫³ 🦋"
-                }
-            }
-        }
-
+		        
         const isUrl = (url) => {
             return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
         }
@@ -613,7 +580,7 @@ const ftrol = {
 			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					bosco.sendMessage(from, result, audio, { quoted: ftaurus, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
+					bosco.sendMessage(from, result, audio, { quoted: ftroli, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
 					}
 			}
 			for (let anjh of imagi){
@@ -2530,6 +2497,7 @@ teks += `*Title : ${get_result[i].title}*
              data = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolkey}&url=${args[0]}`)
              bosco.sendMessage(from, data, audio, { quoted: ftroli })
              break
+             
       case 'alive':
               bosco1 = await bosco.prepareMessage(from, taurus, location, {thumbnail: taurus})
               bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
@@ -2663,6 +2631,44 @@ bosco.sendMessage(from, taurus1, MessageType.buttonsMessage, { quoted: ftroli, c
              console.log(res)
 })
              break
+             case 'help':
+case 'taurus':
+case 'cmd':
+              groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
+        privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
+        totalChat = await bosco.chats.all()
+        bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
+        bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
+        timestampe = speed();
+        latensie = speed() - timestampe
+ hehe = `
+ ‣ ʜᴇʏ : @${sender.split("@")[0]}
+ 
+ ‣ ᴘʀɪᴠᴀᴛᴇ : ${privat.length}
+
+ ‣ ɢʀᴏᴜᴘs : ${groups.length}
+
+ ‣ ᴛᴏᴛᴀʟ : ${totalChat.length}
+
+ ‣ sᴘᴇᴇᴅ : ${latensie.toFixed(4)}
+
+ ‣ ʙᴀᴛᴛᴇʀʏ : ${baterai}%\n
+
+ ${jmn} -  ${jmo}\n${week} - ${calender}
+`
+                menubutton = [
+{buttonId:`credits`,buttonText:{displayText:'ᴄʀᴇᴅɪᴛs'},type:1},
+]
+mhan = await bosco.prepareMessage(from, pfrply, video, {thumbnail: frply})
+const taurus3 = {
+videoMessage: mhan.message.videoMessage,
+contentText: `${hehe}`,
+footerText: `_𝑳𝒐𝒗𝒆 𝑭𝒓𝒐𝒎 𝑻𝒂𝒖𝒓𝒖𝒔 🦋✨_`,
+buttons: menubutton,
+headerType: 5
+}
+bosco.sendMessage(from, taurus3, MessageType.buttonsMessage, { quoted: ftroli, caption: hehe, contextInfo: { mentionedJid: [sender]}})
+             break 
        case 'ss':
 				reply(mess.wait)
 					sendMediaURL(from, `https://bx-hunter.herokuapp.com/api/ssweb?url=${args[0]}&apikey=${HunterApi}`)
