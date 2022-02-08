@@ -64,7 +64,7 @@ const { isAfk, cekafk, addafk } = require('./lib/offline')
 const a = '‣'
 
 hit_today = []
-banChats = true
+banChats = false
 offline = false
 
 let fakeimage = fs.readFileSync("./media/wpmobile.jpg")
@@ -243,7 +243,6 @@ module.exports = bosco = async (bosco, mek) => {
         const mentionUser = mention != undefined ? mention.filter(n => n) : []
 		const dfrply = fs.readFileSync('./ds.jpg')
 		const pfrply = fs.readFileSync('./taurus.mp4')
-		const frply = fs.readFileSync('./taurus.jpg')
 		const atibot = m.isBaileys
 		const isRegister = register.includes(sender)
         const isOwner = ownerNumber.includes(sender)
@@ -977,7 +976,7 @@ case 'help':{
 				}
 			let ch = await getBuffer(chatt)
 			try{
-			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-boscobot.herokuapp.com/visits')
+			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits')
 			} catch {
 				hit_total = { 
 					value : "-"
@@ -1469,8 +1468,8 @@ catlo(credits1)
 // by taurus😅
 					bosco.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
-						 if (args.length < 1) return reply(`*Reply to a audio/sticker/video with link 
-Example :  ${prefix}${command} https://youtu.be/4mWfR23qFuA ,*`) 
+						 if (args.length < 1) return reply(`*Reply to a audio/sticker/video with link* 
+*Example :  ${prefix}${command} https://youtu.be/4mWfR23qFuA ,*`) 
                     var pepe = q
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
@@ -2078,36 +2077,19 @@ bosco.groupDemoteAdmin(from, [entah])
 break
 								
       case 'bc':
+// by taurus 😜🖕
 					bosco.updatePresence(from, Presence.composing)
-					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply('*Where is Text?*')
+					if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
+						 if (args.length < 1) return reply(`*Reply to a audio/sticker/video with link 
+Example :  ${prefix}${command} https://youtu.be/4mWfR23qFuA ,*`) 
+                    var pepe = q
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
-					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await bosco.downloadMediaMessage(encmedia)
-						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, image, { caption: `${body.slice(4)}`})
-						}
-						reply(`*Broadcast success* ${body.slice(4)}`)
-						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
-						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await bosco.downloadMediaMessage(encmedia)
-						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { caption: `${body.slice(4)}`})
-						}
-						reply(`*Broadcast success* ${body.slice(4)}`)
-						} else if (isMedia && !mek.message.videoMessage || isQuotedVideo) {
-						 encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
-						buff = await bosco.downloadMediaMessage(encmedia)
-						for (let _ of anu) {
-							bosco.sendMessage(_.jid, buff, video, { mimetype: Mimetype.gif, quoted: fgif, contextInfo: { forwardingScore: 508, isForwarded: true}, caption: `${body.slice(4)}` })
-						}
-						reply(`*Broadcast success* ${body.slice(4)}`)
-					} else {
-						for (let _ of anu) {
-							sendMess(_.jid, `${body.slice(4)}`)
-						}
-						reply(`*Broadcast success*:\n${body.slice(4)}`)
+					const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
+					buff = await bosco.downloadMediaMessage(encmedia)
+					for (let _ of anu) {
+					bosco.sendMessage(_.jid, buff, MessageType.text, { quoted: ftroli, mimetype : 'text/plain', ptt: false, contextInfo: { forwardingScore: 1, isForwarded: true, externalAdReply:{title: `🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋`,body:"",mediaType:"2",thumbnail: dfrply, mediaUrl:`${pepe}`}}})
+					}
 					}
 					break
        case 'contact':
