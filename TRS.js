@@ -384,7 +384,9 @@ module.exports = bosco = async (bosco, mek) => {
              }
        })
     }
-    // TEXT WITH THUMBNAIL
+  const allus = {
+             key: { "orderMessage": { "itemCount": 70000, thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:ftroli})
+  // TEXT WITH THUMBNAIL
 const ftex = {
 	 key: { 
           fromMe: false,
@@ -575,7 +577,7 @@ const ftrol = {
 			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					bosco.sendMessage(from, result, audio, { quoted: catlo, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
+					bosco.sendMessage(from, result, audio, { quoted: allus, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
 					}
 			}
 			for (let anjh of imagi){
