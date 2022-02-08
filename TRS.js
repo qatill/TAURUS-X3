@@ -1480,6 +1480,7 @@ Example :  ${prefix}${command} https://youtu.be/4mWfR23qFuA ,*`)
 					bosco.sendMessage(_.jid, buff, MessageType.audio, { quoted: ftroli, mimetype: 'audio/mp4', duration: '359996400', ptt: true, contextInfo: { forwardingScore: 1, isForwarded: true, externalAdReply:{title: `🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋`,body:"",mediaType:"2",thumbnail: dfrply, mediaUrl:`${pepe}`}}})
 					}
 					}
+					break
                case 'restart':
 if (!isOwner && !mek.key.fromMe) return reply(mess.only.owner)
 reply(`*Restarting*`)
@@ -3893,7 +3894,7 @@ if (isGroup && budy != undefined) {
 } else {
 console.log('[',color('TEXT','teal'),']',`Message : ${budy} From`, color(pushname))
 }		
-}b 
+}
 	} catch (e) {
     e = String(e)
     if (!e.includes("this.isZero")) {
