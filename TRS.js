@@ -384,8 +384,6 @@ module.exports = bosco = async (bosco, mek) => {
              }
        })
     }
-  const allus = {
-             key: { "orderMessage": { "itemCount": 70000, thumbnail: fs.readFileSync('./ds.jpg'), "surface": 'CATALOG' }}, {quoted:ftroli})
   // TEXT WITH THUMBNAIL
 const ftex = {
 	 key: { 
@@ -401,7 +399,13 @@ const ftex = {
                         }
 	                  } 
                      }
-       const fakeitem = (teks) => {
+       const faketaurus = {
+        key:{
+        	fromMe:false,
+        participant:`0@s.whatsapp.net`, ...(from ? {
+remoteJid :"status@broadcast" }: {})
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`ds.jpg`),"itemCount":2006,"status":"INQUIRY","surface":"CATALOG","message":`${fake}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                   const fakeitem = (teks) => {
            return bosco.sendMessage(from, teks, text, {
                 quoted: {
         key:{
@@ -577,7 +581,7 @@ const ftrol = {
 			for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					bosco.sendMessage(from, result, audio, { quoted: allus, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
+					bosco.sendMessage(from, result, audio, { quoted: fakeitem, mimetype: 'audio/mp4', duration: 1, ptt: true, contextInfo: { forwardingScore: 0, isForwarded: true}})
 					}
 			}
 			for (let anjh of imagi){
@@ -1332,7 +1336,7 @@ catlo(download1)
      🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋
 ┗╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┛
 `
-       osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": denis, "surface": 'CATALOG'}}, {quoted: mek})
+       osk = bosco.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${rules1}`, "footerText": "hehe", "thumbnail": denis, "surface": 'CATALOG'}}, {quoted: ftroli})
             bosco.relayWAMessage(osk)
        break
    case 'credits':
