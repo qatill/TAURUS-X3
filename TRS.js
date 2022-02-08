@@ -312,11 +312,9 @@ module.exports = bosco = async (bosco, mek) => {
             message: {
                 "imageMessage": {
                     "jpegThumbnail": buff1.buffer,
-                    "caption": "🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋"
-                      }
-                   }
+                    "caption": "🦋 𝗧𝗔𝗨𝗥𝗨𝗦 𝗫³ 🦋"
                 }
-            })
+            }
         }
 
         const isUrl = (url) => {
